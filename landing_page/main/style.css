@@ -6,9 +6,13 @@ nav {
 .title_nav {
     display: flex;
     justify-content: flex-start;
+    font-size: 4rem;
+    padding-left: 15rem;
+
+
 }
 
-.title_nav > li {
+.title_nav>li {
     display: inline;
     color: white;
     list-style: none;
@@ -19,15 +23,19 @@ nav {
     background-image: url("./images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 650px;
+    height: 40rem;
+
     color: white;
+
 }
 
 .header_text {
     border: 1px solid white;
-    width: 440px;
-    height: 250px;
-    font-size: larger;
+    width: 40rem;
+    height: 20rem;
+    font-size: 6rem;
+    margin-top: 10rem;
+    margin-left: 15rem;
 }
 
 .home_section {
@@ -35,9 +43,11 @@ nav {
     width: 500px;
     height: 500px;
 }
-.sections{
-   margin:15%;
+
+.sections {
+    margin: 15%;
 }
+
 .sectionText {
     border: 1px solid white;
     background-color: white;
@@ -45,68 +55,89 @@ nav {
     height: 300px;
 }
 
+.flex_container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationLink {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+:hover.navigationLink {
+    border-bottom: 1px solid whitesmoke;
+}
+
 /* .products_section {} */
 
 .button-title-container {
-   display: inline;
- 
-    
+    display: inline;
+
+
 }
 
-.products-grid {
+.products_section>.products-grid {
     display: grid;
-    width: 1114px;
-    height: 1058px;
+    width: 20rem;
+    height: 20rem;
     grid-template-columns: auto auto auto auto;
    
+
 }
 
 .grid-item1 {
     background-image: url("./images/desktop/image-deep-earth.jpg");
-    width: 256px;
-    height: 450px;
+    width: 15rem;
+    height: 25rem;
 }
 
 .grid-item2 {
     background-image: url("./images/desktop/image-night-arcade.jpg");
-    width: 256px;
-    height: 450px;
+    width: 15rem;
+    height: 25rem;
 }
 
 .grid-item3 {
     background-image: url("./images/desktop/image-soccer-team.jpg");
-    width: 256px;
-    height: 450px;
+    width: 15rem;
+    height: 25rem;
 }
 
 .grid-item4 {
     background-image: url("./images/desktop/image-grid.jpg");
-    width: 256px;
-    height: 450px;
+    width: 15rem;
+    height: 25rem;
 }
 
 .grid-item5 {
     background-image: url("./images/desktop/image-from-above.jpg");
-    width: 256px;
-    height: 450px;
+    width: 15rem;
+    height: 25rem;
 }
 
 .grid-item6 {
     background-image: url("./images/desktop/image-pocket-borealis.jpg");
-    width: 256px;
-    height: 450px;
+    width: 15rem;
+    height: 25rem;
 }
 
 .grid-item7 {
     background-image: url("./images/desktop/image-curiosity.jpg");
-    width: 256px;
-    height: 450px;
+    width: 15rem;
+    height: 25rem;
 }
 
 .grid-item8 {
     background-image: url("./images/desktop/image-fisheye.jpg");
-    width: 256px;
-    height: 450px;
+    width: 15rem;
+    height: 25rem;
 }
 
 .products-grid>div {
@@ -114,4 +145,12 @@ nav {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+    
+}
+
+footer {
+    background-color: rgb(6, 6, 6);
+    padding: 10px;
+    text-align: center;
+
 }
