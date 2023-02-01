@@ -1,38 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Loopstudios landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
 
-  Immersive experiences that deliver
 
-  The leader in interactive VR
+  <div class="header_container">
+    <nav class="flex_container">
+      <li> About </li>
+      <li> Careers </li>
+      <li> Events </li>
+      <li> Products </li>
+      <li> Support </li>
+    </nav>
+    <li class="title_nav">loopstudio </li>
+    <div class="header_text">Immersive experiences that deliver</div>
+  </div>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+  <div class="sections">
 
-  Our creations
+    <section class="home_section">
+      <div class="sectionText">The leader in interactive VR
+        Founded in 2011, Loopstudios has been producing world-class virtual reality
+        projects for some of the best companies around the globe. Our award-winning
+        creations have transformed businesses through digital experiences that bind
+        to their brand.
+      </div>
+    </section>
 
-  See all
+
+    <section class="products_section">
+      <div class="button-title-container">
+        <li style="color: black;">Our creations</li>
+        <button> See all</button>
+      </div>
+      <div class="products-grid">
+        <div class="grid-item1"></div>
+        <div class="grid-item2"></div>
+        <div class="grid-item3"></div>
+        <div class="grid-item4"></div>
+        <div class="grid-item5"></div>
+        <div class="grid-item6"></div>
+        <div class="grid-item7"></div>
+        <div class="grid-item8"></div>
+      </div>
+    </section>
+
+  </div>
+  <footer>
+    <li>About</li>
+    <li>Careers</li>
+    <li>Events</li>
+    <li>Products</li>
+    <li>Support</li>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <li>  © 2021 Loopstudios. All rights reserved.</li>
+  </footer>
+
 
   Deep earth
   Night arcade
@@ -43,17 +89,10 @@
   The curiosity
   Make it fisheye
 
-  About
-  Careers
-  Events
-  Products
-  Support
 
-  © 2021 Loopstudios. All rights reserved.
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  
 </body>
+
 </html>

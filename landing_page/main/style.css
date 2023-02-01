@@ -1,0 +1,117 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title_nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title_nav > li {
+    display: inline;
+    color: white;
+    list-style: none;
+
+}
+
+.header_container {
+    background-image: url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 650px;
+    color: white;
+}
+
+.header_text {
+    border: 1px solid white;
+    width: 440px;
+    height: 250px;
+    font-size: larger;
+}
+
+.home_section {
+    background-image: url("./images/desktop/image-interactive.jpg");
+    width: 500px;
+    height: 500px;
+}
+.sections{
+   margin:15%;
+}
+.sectionText {
+    border: 1px solid white;
+    background-color: white;
+    width: 200px;
+    height: 300px;
+}
+
+/* .products_section {} */
+
+.button-title-container {
+   display: inline;
+ 
+    
+}
+
+.products-grid {
+    display: grid;
+    width: 1114px;
+    height: 1058px;
+    grid-template-columns: auto auto auto auto;
+   
+}
+
+.grid-item1 {
+    background-image: url("./images/desktop/image-deep-earth.jpg");
+    width: 256px;
+    height: 450px;
+}
+
+.grid-item2 {
+    background-image: url("./images/desktop/image-night-arcade.jpg");
+    width: 256px;
+    height: 450px;
+}
+
+.grid-item3 {
+    background-image: url("./images/desktop/image-soccer-team.jpg");
+    width: 256px;
+    height: 450px;
+}
+
+.grid-item4 {
+    background-image: url("./images/desktop/image-grid.jpg");
+    width: 256px;
+    height: 450px;
+}
+
+.grid-item5 {
+    background-image: url("./images/desktop/image-from-above.jpg");
+    width: 256px;
+    height: 450px;
+}
+
+.grid-item6 {
+    background-image: url("./images/desktop/image-pocket-borealis.jpg");
+    width: 256px;
+    height: 450px;
+}
+
+.grid-item7 {
+    background-image: url("./images/desktop/image-curiosity.jpg");
+    width: 256px;
+    height: 450px;
+}
+
+.grid-item8 {
+    background-image: url("./images/desktop/image-fisheye.jpg");
+    width: 256px;
+    height: 450px;
+}
+
+.products-grid>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
