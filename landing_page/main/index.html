@@ -8,6 +8,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://fonts.google.com/specimen/Alata">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Loopstudios landing page</title>
   <style>
@@ -42,10 +45,9 @@
     <div class="header_text">Immersive experiences that deliver</div>
   </div>
 
-  <div class="sections">
-
+  <div id="section-main">
     <section class="home_section">
-      <div class="sectionText">The leader in interactive VR
+      <div class="sectionText" style="font-family: Alata">The leader in interactive VR
         Founded in 2011, Loopstudios has been producing world-class virtual reality
         projects for some of the best companies around the globe. Our award-winning
         creations have transformed businesses through digital experiences that bind
@@ -54,9 +56,9 @@
     </section>
 
 
-    <section class="products_section">
+    <div class="products_section">
       <div class="button-title-container">
-        <li style="color: black;">Our creations</li>
+        <li class="our-creations" style="font-family:Josefin Sans">OUR CREATIONS</li>
         <button> See all</button>
       </div>
       <div class="products-grid">
@@ -69,15 +71,21 @@
         <div class="grid-item7"></div>
         <div class="grid-item8"></div>
       </div>
-    </section>
+    </div>
   </div>
 
+  <div style="margin: 30rem"></div>
   <footer>
-    <li>About</li>
-    <li>Careers</li>
-    <li>Events</li>
-    <li>Products</li>
-    <li>Support</li>
+    <div class="footer-links">
+      <li class="title_nav" style="font-size: 2rem;">loopstudio </li>
+      <div class="flex_container">
+        <li class="navigationLink"> <a href="/"></a> About</li>
+        <li class="navigationLink"> <a href="/"></a> Careers </li>
+        <li class="navigationLink"><a href="/"></a> Events </li>
+        <li class="navigationLink"> <a href="/"></a>Products </li>
+        <li class="navigationLink"><a href="/"></a> Support </li>
+      </div>
+    </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
@@ -86,14 +94,14 @@
   </footer>
 
 
-  Deep earth
+  <!-- Deep earth
   Night arcade
   Soccer team VR
   The grid
   From up above VR
   Pocket borealis
   The curiosity
-  Make it fisheye
+  Make it fisheye -->
 
 
 
