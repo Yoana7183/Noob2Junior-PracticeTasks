@@ -1,3 +1,5 @@
+
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -15,13 +17,14 @@ nav {
 
 .title_nav>li {
     display: block;
-    color: white;
+    color: rgb(246, 245, 245);
     list-style: none;
     padding-right: 15rem;
     padding-top: 2rem;
 
 
 }
+
 
 .header_container {
     background-image: url("./images/desktop/image-hero.jpg");
@@ -83,7 +86,7 @@ h1 {
 .navigationLink {
     display: inline-block;
     position: relative;
-    color: white;
+    color: rgb(238, 234, 234);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -93,6 +96,7 @@ h1 {
 :hover.navigationLink {
     border-bottom: 1px solid whitesmoke;
 }
+
 
 
 .button-title-container {
@@ -250,15 +254,14 @@ footer {
     padding-bottom: 1rem;
     font-weight: bold;
 }
-
-@media screen and (max-width: 600px) {
-    .flex_container>.navigationLink, .sectionText {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    .navigationLink{
         float: none;
-        width: 100%;
-    }
-
-    .title_nav  {
         width: auto;
-        color: blue;
+    }
+    .products_section>.products-grid{
+        width: 0.1rem;
+        height: 0.1rem;
+
     }
 }
