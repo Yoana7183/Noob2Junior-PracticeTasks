@@ -1,21 +1,25 @@
 nav {
     display: flex;
     justify-content: flex-end;
+
 }
 
 .title_nav {
     display: flex;
     justify-content: flex-start;
-    font-size: 4rem;
+    font-size: 3rem;
     padding-left: 15rem;
-
+    font-weight: bold;
 
 }
 
 .title_nav>li {
-    display: inline;
+    display: block;
     color: white;
     list-style: none;
+    padding-right: 15rem;
+    padding-top: 2rem;
+
 
 }
 
@@ -23,7 +27,7 @@ nav {
     background-image: url("./images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40rem;
+    height: 35rem;
 
     color: white;
 
@@ -32,36 +36,48 @@ nav {
 .header_text {
     border: 1px solid white;
     width: 40rem;
-    height: 20rem;
-    font-size: 6rem;
-    margin-top: 10rem;
+    height: 15rem;
+    font-size: 4rem;
+    margin-top: 5rem;
     margin-left: 15rem;
 }
 
-.home_section {
+.home-section {
+    display: grid;
+    grid-template-columns: 35rem 15rem;
+
+
+}
+
+.home-picture {
     background-image: url("./images/desktop/image-interactive.jpg");
-    width: 30rem;
+    width: 40rem;
     height: 30rem;
-
-
+    position: relative;
+    margin-top: 2rem;
 }
 
 
 
 .sectionText {
-    border: 1px solid white;
+    position: absolute;
     background-color: white;
-    width: 20rem;
-    height: 30rem;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    width: 30rem;
+    height: 15rem;
+    top: 12rem;
+    left: 30rem;
+    padding: 5rem;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 .flex_container {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-right: 15rem;
+    padding-top: 2rem;
 }
 
 .navigationLink {
@@ -78,11 +94,11 @@ nav {
     border-bottom: 1px solid whitesmoke;
 }
 
-/* .products_section {} */
 
 .button-title-container {
- display: flex;
- justify-content:space-between
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
 }
 
 
@@ -96,12 +112,24 @@ nav {
 
 button {
     width: 7rem;
-    height: 2rem;
-    background-color: black;
-    color: aliceblue;
+    height: 3rem;
+    background-color: white;
+    color: black;
     display: flex;
-    justify-content: end;
-    /* margin-right: 2rem; */
+    justify-content: center;
+    text-align: center;
+    padding-top: 0.5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: 0.1px white;
+    align-items: center;
+
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+
 }
 
 #section-main {
@@ -110,6 +138,12 @@ button {
     font-family: Josefin Sans;
     justify-content: center;
     text-align: center;
+}
+
+#container-under-picture {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
 }
 
 .products_section>.products-grid {
@@ -133,12 +167,14 @@ button {
     width: 13rem;
     height: 20rem;
     margin-bottom: 1rem;
+    position: relative;
 }
 
 .grid-item2 {
     background-image: url("./images/desktop/image-night-arcade.jpg");
     width: 13rem;
     height: 20rem;
+    position: relative;
 }
 
 .grid-item3 {
@@ -182,6 +218,8 @@ button {
     text-align: center;
     padding: 1rem 0;
     font-size: 2rem;
+    font-family: 'Josefin Sans';
+    color: white;
 
 }
 
@@ -192,16 +230,35 @@ button {
 }
 
 
-footer{
+footer {
     background-color: black;
     color: aliceblue;
-    
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 8rem;
+    padding-top: 4rem;
 }
 
+.footer-links {
+    padding-left: 10rem;
+    list-style: none;
+    text-align: left;
+    padding-bottom: 2rem;
+}
 
-@media screen and (max-width: 375px) {
-    .nav li {
+.title_footer {
+    padding-bottom: 1rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .flex_container>.navigationLink, .sectionText {
         float: none;
         width: 100%;
+    }
+
+    .title_nav  {
+        width: auto;
+        color: blue;
     }
 }
