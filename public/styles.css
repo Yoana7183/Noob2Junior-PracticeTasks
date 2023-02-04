@@ -512,3 +512,11 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.home-picture {
+  background-image: url("./images/desktop/image-interactive.jpg");
+  width: 40rem;
+  height: 30rem;
+  position: relative;
+  margin-top: 2rem;
+}
