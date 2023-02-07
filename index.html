@@ -18,7 +18,7 @@
 
 
 
-    <body>
+    <body onresize="resize()">
 
 
         <header class="col-span-5 p-0">
@@ -93,7 +93,7 @@
         <!-- Main content -->
         <main class="m-10 md:m-20 md:p-0 md:flex md:justify-center">
             <div class="relative">
-       
+
                 <img src="./images/desktop/image-interactive.jpg" alt="">
                 <div class="font-josefin p-10 
                                  md:w-6/12
@@ -101,17 +101,42 @@
                                  md:p-15
                                  md:absolute -right-0 -bottom-10 bg-white">
                     <h1 class="text-center">THE LEADER IN ITERACTIVE VR</h1>
-                    <h6 class="text-center">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. 
-                        Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</h6>
+                    <h6 class="text-center">Founded in 2011, Loopstudios has been producing world-class virtual reality
+                        projects for some of the best companies around the globe.
+                        Our award-winning creations have transformed businesses through digital experiences that bind to
+                        their brand.</h6>
                 </div>
             </div>
         </main>
 
-        <main>
-            <div>
-                
+        <main class="first-main">
+            <div class="grid grid-col-1 sm:hidden md:hidden lg:hidden">
+                <div><img src="./images/mobile/image-deep-earth.jpg" alt=""></div>
+                <div><img src="./images/mobile/image-night-arcade.jpg" alt=""></div>
+                <div><img src="./images/mobile/image-soccer-team.jpg" alt=""></div>
+                <div><img src="./images/mobile/image-grid.jpg" alt=""></div>
+                <div><img src="./images/mobile/image-from-above.jpg" alt=""></div>
+                <div><img src="./images/mobile/image-pocket-borealis.jpg" alt=""></div>
+                <div><img src="./images/mobile/image-curiosity.jpg" alt=""></div>
+                <div><img src="./images/mobile/image-fisheye.jpg" alt=""></div>
             </div>
         </main>
+
+        <main class="second-main">
+            <div class="grid grid-cols-4 gap-4  sm:grid-col-3 m-20 ">
+                <div><img src="./images/desktop/image-deep-earth.jpg" alt=""></div>
+                <div><img src="./images/desktop/image-night-arcade.jpg" alt=""></div>
+                <div><img src="./images/desktop/image-soccer-team.jpg" alt=""></div>
+                <div><img src="./images/desktop/image-grid.jpg" alt=""></div>
+                <div><img src="./images/desktop/image-from-above.jpg" alt=""></div>
+                <div><img src="./images/desktop/image-pocket-borealis.jpg" alt=""></div>
+                <div><img src="./images/desktop/image-curiosity.jpg" alt=""></div>
+                <div><img src="./images/desktop/image-fisheye.jpg" alt=""></div>
+            </div>
+        </main>
+
+
+
         <!-- Footter -->
         <footer class="col-span-5 p-10 dark:bg-gray-800 bg-black text-white">
             <footer class="px-4 divide-y dark:bg-gray-800 dark:text-gray-100">
@@ -189,6 +214,19 @@
         button.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
+        let resize = function () {
+            var w = window.innerWidth;
+            let socondMain = document.getElementsByClassName('second-main');
+          
+            if (w <= 640) {
+                document.getElementsByClassName('second-main')[0].style.display = 'none';
+                document.getElementsByClassName('first-main')[0].style.visibility = 'visible';
+            }if(w >= 640){
+                document.getElementsByClassName('first-main')[0].style.display = 'none';
+                document.getElementsByClassName('second-main')[0].style.visibility = 'visible';
+            }
+        }
+
     </script>
 </body>
 
