@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +39,7 @@
                            ">
                     <div>
                         <a href="#">
-                          loopstudios
+                            loopstudios
                         </a>
                     </div>
 
@@ -48,10 +53,14 @@
                     <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
                         <ul class="
                                  pt-4
-                                 text-base text-white
+                                text-white
+                                 text-sm
+                                 font-josefin
                                  md:flex
                                  md:justify-between 
-                                 md:pt-0">
+                                 md:pt-0
+                                 md:font-base
+                                 md:font-lg">
                             <li>
                                 <a class="md:p-4 py-2 block no-underline hover:underline" href="#">Features</a>
                             </li>
@@ -70,6 +79,11 @@
                         </ul>
                     </div>
                 </nav>
+                <div class="ml-0 ml:10 sm:ml-40 md:ml-60 md:mt-40 ">
+                    <div class=" bg-transparent text-white border border-white mt-28 ml-10
+                text-[30px]  w-2/3 h-30 sm:w-2/5  lg:text-[58px] 
+                ml-300 font-josefin md:w-100 md:text-[30px]">IMMERSIVE EXPERIANCES THAT DELIVER</div>
+                </div>
             </div>
 
 
@@ -77,11 +91,27 @@
 
 
         <!-- Main content -->
-        <main class="col-span-5 sm:mx-20 md:col-span-3 h-96 p-10">
-            <h1 class="text-center text-2xl">Main Content</h1>
+        <main class="m-10 md:m-20 md:p-0 md:flex md:justify-center">
+            <div class="relative">
+       
+                <img src="./images/desktop/image-interactive.jpg" alt="">
+                <div class="font-josefin p-10 
+                                 md:w-6/12
+                                 md:h-56 
+                                 md:p-15
+                                 md:absolute -right-0 -bottom-10 bg-white">
+                    <h1 class="text-center">THE LEADER IN ITERACTIVE VR</h1>
+                    <h6 class="text-center">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. 
+                        Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</h6>
+                </div>
+            </div>
         </main>
 
-
+        <main>
+            <div>
+                
+            </div>
+        </main>
         <!-- Footter -->
         <footer class="col-span-5 p-10 dark:bg-gray-800 bg-black text-white">
             <footer class="px-4 divide-y dark:bg-gray-800 dark:text-gray-100">

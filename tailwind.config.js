@@ -5,7 +5,7 @@ module.exports = {
   darkMode: 'media', // or 'class'
   theme: {
     screens: {
-      sm: '375px',
+      sm: '640px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
@@ -388,6 +388,7 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      josefin:["Josefin Sans"]
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
