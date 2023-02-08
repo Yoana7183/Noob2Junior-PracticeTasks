@@ -37,9 +37,9 @@ nav {
   
   .nav > .nav-header > .nav-title {
     display: inline-block;
-    font-size: 22px;
+    font-size: 3rem;
     color: #fff;
-    padding: 10px 10px 10px 10px;
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
   }
   
   .nav > .nav-btn {
@@ -67,7 +67,7 @@ nav {
     display: none;
   }
   
-  @media (max-width:600px) {
+  @media (max-width:420px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -110,6 +110,12 @@ nav {
     .nav > #nav-check:checked ~ .nav-links {
       height: calc(100vh - 50px);
       overflow-y: auto;
+    }
+    .header_container{
+        background-image: url("./images/mobile/image-hero.jpg");
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+
     }
   }
 
