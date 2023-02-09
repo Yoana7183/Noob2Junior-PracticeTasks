@@ -68,8 +68,8 @@ nav {
 
 /* start all mobile media query */
 
-	
-@media only screen and (min-width: 300px) and (max-width: 430px){
+
+@media only screen and (min-width: 300px) and (max-width: 430px) {
   .nav>.nav-btn {
     display: inline-block;
     position: absolute;
@@ -108,10 +108,7 @@ nav {
     left: 0px;
   }
 
-  .nav>.nav-links>a {
-
-
-  }
+  .nav>.nav-links>a {}
 
   .nav>#nav-check:not(:checked)~.nav-links {
     height: 0px;
@@ -123,14 +120,15 @@ nav {
   }
 
   .header_container {
-    background-image: url("./images/desktop/image-hero.jpg");
+    background-image: url("./images/mobile/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 40rem;
-  
+
     color: white;
-  
+
   }
+
   .header_text {
     border: 1px solid white;
     width: 20rem;
@@ -141,37 +139,35 @@ nav {
     margin-right: 1rem;
     display: flex;
     justify-content: center;
-    
-  }
 
-  .home-picture {
-    background-image: url("./images/mobile/image-interactive.jpg");
-    width: 3rem;
-    height: 10rem;
-    position: relative;
-    margin-top: 2rem;
   }
-  
-  
-  
+  /*there is a problem with the picture and the text when the view is smaller*/
   .sectionText {
-    position: absolute;
+    margin-bottom: 10rem;
     background-color: white;
     width: 30rem;
     height: 15rem;
-    top: 12rem;
-    left: 30rem;
-    padding: 5rem;
+
   }
-  
+  .home-picture {
+    
+    background-image: url("./images/mobile/image-interactive.jpg");
+
+    height: 30rem;
+
+  }
+
+
+
   h1 {
     font-size: 3rem;
   }
+
   .grid-item1 {
     background-image: url("./images/mobile/image-deep-earth.jpg");
-   background-position: inherit;
+    background-position: inherit;
     height: 10rem;
-    width: 3rem;
+
     margin-bottom: 1rem;
     position: relative;
   }
@@ -225,9 +221,10 @@ nav {
     position: relative;
   }
 }
+
 /*  start tablet media query*/
 
-@media only screen and (min-width: 430px) and (max-width: 911px){
+@media only screen and (min-width: 430px) and (max-width: 911px) {
   .nav>.nav-btn {
     display: inline-block;
     position: absolute;
@@ -286,10 +283,11 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     height: 40rem;
-  
+
     color: white;
-  
+
   }
+
   .header_text {
     border: 1px solid white;
     width: 22rem;
@@ -300,13 +298,21 @@ nav {
     margin-right: 1rem;
     display: flex;
     justify-content: center;
-    
+
   }
 
+  .home-picture {
+    background-image: url("./images/mobile/image-interactive.jpg");
+    width: 29rem;
+    height: 25rem;
+    position: relative;
+    margin-top: 2rem;
+
+  }
 
   .grid-item1 {
     background-image: url("./images/mobile/image-deep-earth.jpg");
-   background-position: inherit;
+    background-position: inherit;
     height: 10rem;
     margin-bottom: 1rem;
     position: relative;
@@ -360,7 +366,8 @@ nav {
     margin-bottom: 1rem;
     position: relative;
   }
-  }
+}
+
 @media (max-width:600px) {
   /* .nav>.nav-btn {
     display: inline-block;
@@ -494,15 +501,16 @@ nav {
     margin-bottom: 1rem;
     position: relative;
   } */
-  
+
 }
+
 /*  end mobile media query*/
 
 /*  start DESKTOP media query*/
 
 
 @media only screen and (min-width: 911px) {
-  
+
   .products_section>.products-grid {
     display: grid;
     width: 20rem;
@@ -513,13 +521,14 @@ nav {
 
 
   }
+
   .header_text {
     border: 1px solid white;
     width: 20rem;
     height: 15rem;
     font-size: 4rem;
-   
-   
+
+
   }
 
   .products_section {
@@ -598,11 +607,11 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     height: 30rem;
-  
+
     color: white;
-  
+
   }
-  
+
   .header_text {
     border: 1px solid white;
     width: 38rem;
@@ -612,13 +621,39 @@ nav {
     margin-left: 2rem;
     display: flex;
     justify-content: center;
-    
+
   }
+
   .products_section {
     margin: 5rem;
-  } 
+  }
+
+  .home-picture {
+    background-image: url("./images/desktop/image-interactive.jpg");
+    width: 40rem;
+    height: 30rem;
+    position: relative;
+    margin-top: 2rem;
+  }
+
+
+
+  .sectionText {
+    position: absolute;
+    background-color: white;
+    width: 30rem;
+    height: 15rem;
+    top: 12rem;
+    left: 30rem;
+    padding: 5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
 
 }
+
 /*  end desctop media query*/
 
 
@@ -629,29 +664,6 @@ nav {
 
 }
 
-.home-picture {
-  background-image: url("./images/desktop/image-interactive.jpg");
-  width: 40rem;
-  height: 30rem;
-  position: relative;
-  margin-top: 2rem;
-}
-
-
-
-.sectionText {
-  position: absolute;
-  background-color: white;
-  width: 30rem;
-  height: 15rem;
-  top: 12rem;
-  left: 30rem;
-  padding: 5rem;
-}
-
-h1 {
-  font-size: 3rem;
-}
 
 .flex_container {
   list-style-type: none;
