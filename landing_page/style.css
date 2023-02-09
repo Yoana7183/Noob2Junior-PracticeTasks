@@ -66,7 +66,168 @@ nav {
   display: none;
 }
 
-@media (max-width:600px) {
+/* start all mobile media query */
+
+	
+@media only screen and (min-width: 300px) and (max-width: 430px){
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
+    background-color: transparent
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+
+
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  .header_container {
+    background-image: url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+  
+    color: white;
+  
+  }
+  .header_text {
+    border: 1px solid white;
+    width: 20rem;
+    height: 14rem;
+    font-size: 3rem;
+    margin-top: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .home-picture {
+    background-image: url("./images/mobile/image-interactive.jpg");
+    width: 3rem;
+    height: 10rem;
+    position: relative;
+    margin-top: 2rem;
+  }
+  
+  
+  
+  .sectionText {
+    position: absolute;
+    background-color: white;
+    width: 30rem;
+    height: 15rem;
+    top: 12rem;
+    left: 30rem;
+    padding: 5rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+  }
+  .grid-item1 {
+    background-image: url("./images/mobile/image-deep-earth.jpg");
+   background-position: inherit;
+    height: 10rem;
+    width: 3rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item2 {
+    background-image: url("./images/mobile/image-night-arcade.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item3 {
+    background-image: url("./images/mobile/image-soccer-team.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item4 {
+    background-image: url("./images/mobile/image-grid.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item5 {
+    background-image: url("./images/mobile/image-from-above.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item6 {
+    background-image: url("./images/mobile/image-night-arcade.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item7 {
+    background-image: url("./images/mobile/image-curiosity.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item8 {
+    background-image: url("./images/mobile/image-fisheye.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+}
+/*  start tablet media query*/
+
+@media only screen and (min-width: 430px) and (max-width: 911px){
   .nav>.nav-btn {
     display: inline-block;
     position: absolute;
@@ -119,13 +280,28 @@ nav {
     overflow-y: auto;
   }
 
+
   .header_container {
-    background-image: url("./images/mobile/image-hero.jpg");
-    /* background-repeat: no-repeat;
-        background-size: cover; */
-
+    background-image: url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+  
+    color: white;
+  
   }
-
+  .header_text {
+    border: 1px solid white;
+    width: 22rem;
+    height: 13rem;
+    font-size: 3rem;
+    margin-top: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    
+  }
 
 
   .grid-item1 {
@@ -184,10 +360,149 @@ nav {
     margin-bottom: 1rem;
     position: relative;
   }
+  }
+@media (max-width:600px) {
+  /* .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
+    background-color: transparent
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+
+  .header_container {
+    background-image: url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+  
+    color: white;
+  
+  }
+  .header_text {
+    border: 1px solid white;
+    width: 22rem;
+    height: 13rem;
+    font-size: 3rem;
+    margin-top: 7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+
+  .grid-item1 {
+    background-image: url("./images/mobile/image-deep-earth.jpg");
+   background-position: inherit;
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item2 {
+    background-image: url("./images/mobile/image-night-arcade.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item3 {
+    background-image: url("./images/mobile/image-soccer-team.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item4 {
+    background-image: url("./images/mobile/image-grid.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item5 {
+    background-image: url("./images/mobile/image-from-above.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item6 {
+    background-image: url("./images/mobile/image-night-arcade.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item7 {
+    background-image: url("./images/mobile/image-curiosity.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+
+  .grid-item8 {
+    background-image: url("./images/mobile/image-fisheye.jpg");
+    height: 10rem;
+    margin-bottom: 1rem;
+    position: relative;
+  } */
   
 }
+/*  end mobile media query*/
 
-@media only screen and (min-width: 600px) {
+/*  start DESKTOP media query*/
+
+
+@media only screen and (min-width: 911px) {
+  
   .products_section>.products-grid {
     display: grid;
     width: 20rem;
@@ -197,6 +512,14 @@ nav {
     margin-bottom: 1rem;
 
 
+  }
+  .header_text {
+    border: 1px solid white;
+    width: 20rem;
+    height: 15rem;
+    font-size: 4rem;
+   
+   
   }
 
   .products_section {
@@ -270,31 +593,34 @@ nav {
   }
 
 
-
+  .header_container {
+    background-image: url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+  
+    color: white;
+  
+  }
+  
+  .header_text {
+    border: 1px solid white;
+    width: 38rem;
+    height: 15rem;
+    font-size: 4rem;
+    margin-top: 7rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    
+  }
   .products_section {
     margin: 5rem;
-  }
+  } 
 
 }
+/*  end desctop media query*/
 
-.header_container {
-  background-image: url("./images/desktop/image-hero.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 30rem;
-
-  color: white;
-
-}
-
-.header_text {
-  border: 1px solid white;
-  width: 40rem;
-  height: 15rem;
-  font-size: 4rem;
-  margin-top: 5rem;
-  margin-left: 15rem;
-}
 
 .home-section {
   display: grid;
@@ -424,8 +750,8 @@ footer {
   font-weight: bold;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .navigationLink {
     display: none;
   }
-}
+} */
