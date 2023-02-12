@@ -98,13 +98,14 @@ nav {
 
   .nav>.nav-links {
     position: absolute;
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    background-color: transparent;
+    background-color: black;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
+    top: 0px;
     left: 0px;
   }
 
@@ -332,7 +333,7 @@ nav {
 
 
   .footer-links {
-   
+
     list-style: none;
     text-align: left;
     padding-bottom: 2rem;
@@ -342,13 +343,14 @@ nav {
     padding-bottom: 1rem;
     font-weight: bold;
   }
+
   footer {
 
     background-color: black;
     color: aliceblue;
     display: grid;
-    grid-template-columns: auto ;
-     height: 30rem;
+    grid-template-columns: auto;
+    height: 30rem;
     padding-top: 4rem;
   }
 
