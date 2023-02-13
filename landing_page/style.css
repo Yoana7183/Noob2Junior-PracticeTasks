@@ -87,7 +87,8 @@ nav {
 
   .nav>.nav-btn>label:hover,
   .nav #nav-check:checked~.nav-btn>label {
-    background-color: black
+    background-color: black;
+
   }
 
   .nav>.nav-btn>label>span {
@@ -254,10 +255,12 @@ nav {
   }
 
   p {
+    margin-top: 3rem;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     position: absolute;
+    width: 2rem;
   }
 
   .home-section {
@@ -292,7 +295,7 @@ nav {
 
 
   .button-title-container {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     margin-top: 1.5rem;
   }
@@ -301,28 +304,40 @@ nav {
   .our-creations {
     color: black;
     list-style: none;
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content: start;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  margin-left: 1rem;
   }
 
-  button {
-    width: 7rem;
-    height: 3rem;
+  .see-all-btn {
+    display: none;
+
+  }
+
+  .see-all-btn-mobile {
+    width: 10rem;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    margin-left: 6rem;
     background-color: white;
     color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     padding-top: 0.5px;
-    font-size: 1.3rem;
+    font-size: 2rem;
     cursor: pointer;
     border: 0.1px white;
     align-items: center;
 
   }
 
-  button:hover {
+  .see-all-btn-mobile:hover {
     background-color: black;
     color: white;
 
@@ -344,12 +359,10 @@ nav {
 
 
 
-
-
   .footer-links {
-
+    display: grid;
     list-style: none;
-    text-align: left;
+    text-align: center;
     padding-bottom: 2rem;
   }
 
@@ -367,6 +380,23 @@ nav {
     height: 30rem;
     padding-top: 4rem;
   }
+
+
+  .navigationLink {
+    display: inline;
+    ;
+    position: relative;
+    color: rgb(238, 234, 234);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  :hover.navigationLink {
+    border-bottom: 1px solid whitesmoke;
+  }
+
 
 }
 
@@ -491,6 +521,10 @@ nav {
     font-size: 3rem;
   }
 
+  .see-all-btn-mobile {
+    display: none;
+  }
+
   .our-creations {
     color: black;
     list-style: none;
@@ -586,6 +620,7 @@ nav {
     display: flex;
     position: absolute;
   }
+
   .home-section {
     display: grid;
     grid-template-columns: 35rem 15rem;
@@ -785,7 +820,7 @@ nav {
     margin-top: 15rem;
   }
 
-  :hover.grid-item1 {
+  :hover.grid-item1 .grid-item2{
     opacity: 60%;
   }
 
@@ -887,6 +922,9 @@ nav {
     margin-top: 1.5rem;
   }
 
+  .see-all-btn-mobile {
+    display: none;
+  }
 
   .our-creations {
     color: black;
@@ -951,9 +989,16 @@ nav {
   .title_footer {
     padding-bottom: 1rem;
     font-weight: bold;
+    margin-top: 3rem;
   }
-
-
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+  height: 12rem;
+}
+.attribution{
+  margin-top: 3rem;
+}
 }
 
 /*  end desctop media query*/
