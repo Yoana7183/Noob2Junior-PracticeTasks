@@ -64,6 +64,7 @@ nav {
 
 .nav>#nav-check {
   display: none;
+
 }
 
 /* start all mobile media query */
@@ -86,7 +87,7 @@ nav {
 
   .nav>.nav-btn>label:hover,
   .nav #nav-check:checked~.nav-btn>label {
-    background-color: transparent
+    background-color: black
   }
 
   .nav>.nav-btn>label>span {
@@ -105,19 +106,24 @@ nav {
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 0px;
+    /* top: 0px; */
     left: 0px;
+    background-image: none;
   }
 
 
 
   .nav>#nav-check:not(:checked)~.nav-links {
     height: 0px;
+    background-color: black;
   }
 
   .nav>#nav-check:checked~.nav-links {
     height: calc(100vh - 50px);
     overflow-y: auto;
+    background-color: black;
+    font-size: 2rem;
+
   }
 
   .header_container {
@@ -193,6 +199,7 @@ nav {
     background-position: inherit;
     height: 10rem;
 
+    justify-content: left;
     margin-bottom: 1rem;
     position: relative;
   }
@@ -244,6 +251,13 @@ nav {
     height: 10rem;
     margin-bottom: 1rem;
     position: relative;
+  }
+
+  p {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    position: absolute;
   }
 
   .home-section {
@@ -565,6 +579,13 @@ nav {
     position: relative;
   }
 
+
+  p {
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    position: absolute;
+  }
   .home-section {
     display: grid;
     grid-template-columns: 35rem 15rem;
@@ -754,6 +775,14 @@ nav {
     background-image: url("./images/desktop/image-fisheye.jpg");
     width: 13rem;
     height: 20rem;
+  }
+
+  p {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 15rem;
   }
 
   :hover.grid-item1 {
