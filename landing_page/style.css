@@ -1,3 +1,7 @@
+
+
+
+/**/
 nav {
   display: flex;
   justify-content: flex-end;
@@ -373,7 +377,7 @@ nav {
 
   footer {
 
-    background-color: black;
+    background-color: #000000;
     color: aliceblue;
     display: grid;
     grid-template-columns: auto;
