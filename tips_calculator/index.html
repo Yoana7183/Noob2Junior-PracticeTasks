@@ -49,11 +49,11 @@
       <div class="grid-container">
         <div class="left-container">
           <div>
-            <p style="color: hsl(186, 14%, 43%);">Bill</p>
+            <p style="color: hsl(186, 14%, 43%);">Bill <p class="empty-field-msg-bill"> Can't be zero</p></p>
             <div class="bill-input">
               <div>
         
-                <input type="number" name="bill-before-tip" id="bill-before-tip">
+                <input type="number" name="bill-before-tip" id="bill-before-tip" >
               </div>
             </div>
           </div>
@@ -61,20 +61,20 @@
             <p style="color: hsl(186, 14%, 43%);">Select Tip %</p>
             <div class="select-tip-contaner">
 
-              <button class="f-percent-tip"> 5%</button>
-              <button class="t-percent-tip"> 10%</button>
-              <button class="f-percent-tip"> 15%</button>
-              <button class="t-percent-tip"> 25%</button>
-              <button class="ft-percent-tip"> 50%</button>
-              <input class="custom-percent-tip" placeholder="Custom"> </input>
+              <button class="five-percent-tip"> 5%</button>
+              <button class="ten-percent-tip"> 10%</button>
+              <button class="fiftheen-percent-tip"> 15%</button>
+              <button class="twentyfive-percent-tip"> 25%</button>
+              <button class="fifty-percent-tip"> 50%</button>
+              <input class="custom-percent-tip" placeholder="Custom" > </input>
             </div>
 
           </div>
           <div>
-            <p style="color: hsl(186, 14%, 43%);"> Number of People </p>
+            <p style="color: hsl(186, 14%, 43%);"> Number of People <p class="empty-field-msg-people">Can't be zero</p></p>
             <div class="number-of-people-container">
 
-              <input type="number" name="number-of-people-input" id="number-of-people">
+              <input type="number" name="number-of-people-input" id="number-of-people" onchange="getCurrentNumberOfPeople(value)">
             </div>
           </div>
         </div>
@@ -84,13 +84,13 @@
               <div class="tip-amount-by-person">Tip Amount
                 <div class="by-per" style="color: hsl(186, 14%, 43%);">/ person</div>
               </div>
-              <div class="amount-by-person-actual"> 4.27</div>
+              <div class="amount-by-person-actual"></div>
             </div>
             <div class="second-amount">
               <div class="tip-amount-total"> Total
                 <div class="by-per" style="color: hsl(186, 14%, 43%);">/ person</div>
               </div>
-              <div class="amount-total-actual">32.795</div>
+              <div class="amount-total-actual"></div>
             </div>
           </div>
           <div class="btn-container">
@@ -104,6 +104,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Nakova Yoana</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

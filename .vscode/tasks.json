@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run with Node",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+           "options": {
+               "cwd": "${fileDirname}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "focus": false,
+                "clear": true,
+                "echo": false,
+                "showReuseMessage": false
+            }
+        },
+        {
+            "label": "Open in Chrome (standard)",
+            "group": "build",
+            "type": "shell",
+            "command": "/usr/bin/google-chrome",
+            "args": [
+                "${file}"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Echo vscode VARS",
+            "type": "shell",
+            "command": "echo",
+            "args": [
+                "\n WORKSPACEFOLDER: ${workspaceFolder}",
+                "\n WORKSPACEROOT: ${workspaceRoot}",
+                "\n CWD: ${cwd}",
+            ]
+        }
+    ]
+}

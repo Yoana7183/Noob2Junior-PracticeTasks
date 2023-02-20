@@ -214,6 +214,13 @@ input {
     color: rgb(89, 185, 185);
     font-weight: 700;
 }
+.empty-field-msg-bill{
+    visibility: hidden;
+}
+.empty-field-msg-people{
+    display: none;
+}
+
 /*--------------------------------------------DESKTOP------------------------------------------------*/
 @media only screen and (min-width: 911px) and (max-width: 1550px) {
 
