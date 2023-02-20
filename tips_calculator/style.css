@@ -136,7 +136,84 @@ input {
     grid-template-columns: auto auto;
 
 }
+.custom-percent-tip {
 
+    width: 7.3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 0px;
+    background-color: hsl(189, 41%, 97%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+.reset-btn {
+    width: 20rem;
+    height: 3rem;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(186, 14%, 43%);
+    border-radius: 0.5rem;
+    border: 0px;
+    font-size: 1.5rem;
+
+}
+:hover.reset-btn {
+    background-color: rgb(89, 185, 185);
+}
+#bill-before-tip {
+    background-color: hsl(189, 41%, 97%);
+    width: 24rem;
+    height: 3rem;
+    border: 0px;
+}
+
+#number-of-people {
+    background-color: hsl(189, 41%, 97%);
+    width: 24rem;
+    height: 3rem;
+    border: 0px;
+}
+.result-of-calculation-tip-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 1rem;
+}
+
+.first-amount {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 1rem;
+
+}
+.second-amount {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.tip-amount-by-person {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+
+.tip-amount-total {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+.amount-by-person-actual {
+    font-size: 3rem;
+    color: rgb(89, 185, 185);
+    font-weight: 700;
+}
+
+.amount-total-actual {
+    font-size: 3rem;
+    color: rgb(89, 185, 185);
+    font-weight: 700;
+}
 /*--------------------------------------------DESKTOP------------------------------------------------*/
 @media only screen and (min-width: 911px) and (max-width: 1550px) {
 
@@ -158,95 +235,6 @@ input {
         background-color: hsl(183, 100%, 15%);
         border-radius: 0.5rem;
         color: white;
-    }
-
-    .custom-percent-tip {
-
-        width: 7.3rem;
-        height: 3rem;
-        border-radius: 0.5rem;
-        border: 0px;
-        background-color: hsl(189, 41%, 97%);
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .btn-container {
-        display: flex;
-        justify-content: center;
-
-
-
-    }
-
-    .reset-btn {
-        width: 20rem;
-        height: 3rem;
-        background-color: hsl(183, 100%, 15%);
-        color: hsl(186, 14%, 43%);
-        border-radius: 0.5rem;
-        border: 0px;
-        font-size: 1.5rem;
-
-    }
-
-    :hover.reset-btn {
-        background-color: rgb(89, 185, 185);
-    }
-
-    #bill-before-tip {
-        background-color: hsl(189, 41%, 97%);
-        width: 24rem;
-        height: 3rem;
-        border: 0px;
-    }
-
-    #number-of-people {
-        background-color: hsl(189, 41%, 97%);
-        width: 24rem;
-        height: 3rem;
-        border: 0px;
-    }
-
-    .result-of-calculation-tip-container {
-        display: grid;
-        grid-template-columns: auto;
-        padding-top: 1rem;
-    }
-
-    .first-amount {
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 1rem 1rem 1rem;
-
-    }
-
-    .second-amount {
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 1rem 1rem 1rem;
-    }
-
-    .tip-amount-by-person {
-        font-size: 1.2rem;
-        padding-top: 1rem;
-    }
-
-    .tip-amount-total {
-        font-size: 1.2rem;
-        padding-top: 1rem;
-    }
-
-    .amount-by-person-actual {
-        font-size: 3rem;
-        color: rgb(89, 185, 185);
-        font-weight: 700;
-    }
-
-    .amount-total-actual {
-        font-size: 3rem;
-        color: rgb(89, 185, 185);
-        font-weight: 700;
     }
 }
 /*--------------------------------------------MOBILE------------------------------------------------*/
@@ -312,97 +300,35 @@ input {
         
     }
 
-/* Refactored -            -                -                -               -*/
     .custom-percent-tip {
 
         width: 160px;
         height: 2.8rem;
-        border-radius: 0.5rem;
-        border: 0px;
-        background-color: hsl(189, 41%, 97%);
         font-size: 1rem;
-        text-align: center;
+    
     }
-
-    .btn-container {
-        display: flex;
-        justify-content: center;
-
-
-
-    }
-
     .reset-btn {
         width: 20rem;
         height: 3rem;
-        background-color: hsl(183, 100%, 15%);
-        color: hsl(186, 14%, 43%);
-        border-radius: 0.5rem;
-        border: 0px;
         font-size: 1.5rem;
-
-    }
-
-    :hover.reset-btn {
-        background-color: rgb(89, 185, 185);
     }
 
     #bill-before-tip {
-        background-color: hsl(189, 41%, 97%);
         width: 20rem;
         height: 3rem;
-        border: 0px;
         margin-bottom: 2rem;
         font-size: 2rem;
     }
 
-    #number-of-people {
-        background-color: hsl(189, 41%, 97%);
+    #number-of-people { 
         width: 20rem;
         height: 3rem;
-        border: 0px;
         font-size: 2rem;
     }
 
     .result-of-calculation-tip-container {
-        display: grid;
         grid-template-columns: auto;
         padding-top: 1rem;
-    }
-
-    .first-amount {
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 1rem 1rem 1rem;
-
-    }
-
-    .second-amount {
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem 1rem 1rem 1rem;
-    }
-
-    .tip-amount-by-person {
-        font-size: 1.2rem;
-        padding-top: 1rem;
-    }
-
-    .tip-amount-total {
-        font-size: 1.2rem;
-        padding-top: 1rem;
-    }
-
-    .amount-by-person-actual {
-        font-size: 3rem;
-        color: rgb(89, 185, 185);
-        font-weight: 700;
-    }
-
-    .amount-total-actual {
-        font-size: 3rem;
-        color: rgb(89, 185, 185);
-        font-weight: 700;
     }
 }
 
