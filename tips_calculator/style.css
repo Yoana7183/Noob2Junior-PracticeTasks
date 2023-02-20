@@ -2,6 +2,7 @@
     margin: 0;
 
 }
+
 .title {
     background-color: hsl(185, 41%, 84%);
     padding-top: 5rem;
@@ -16,34 +17,40 @@
     width: 5.56rem;
     height: 3.3rem;
 }
+
 .first>span {
 
     color: hsl(186, 14%, 43%)
 }
+
 .spliter {
     background-color: hsl(185, 41%, 84%);
     display: flex;
     justify-content: center;
 
 }
+
 .spliter-text {
     position: absolute;
 
 }
-.container{
+
+.container {
     display: flex;
     justify-content: center;
     margin: 5rem;
-    background-color: hsl(0, 0%, 100%); 
-    border-radius: 0.5rem; 
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
     gap: 2rem;
 
 }
+
 .left-container {
     margin-top: 1rem;
     display: grid;
@@ -51,11 +58,13 @@
     width: 24rem;
     border-radius: 0.5rem;
 }
+
 input[name="bill-before-tip"] {
     background-image: url("images/icon-dollar.svg");
     background-position: 5% 50%;
     background-repeat: no-repeat;
 }
+
 input[name="number-of-people-input"] {
     background-image: url("images/icon-person.svg");
     background-position: 5% 50%;
@@ -91,17 +100,20 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
 input {
     text-align: right;
     font-size: 1.5rem;
     color: hsl(183, 100%, 15%);
     font-weight: 600;
 }
+
 .select-tip-contaner {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 0.5rem;
 }
+
 .select-tip-contaner>button {
     background-color: hsl(183, 100%, 15%);
     width: 7.3rem;
@@ -136,6 +148,7 @@ input {
     grid-template-columns: auto auto;
 
 }
+
 .custom-percent-tip {
 
     width: 7.3rem;
@@ -146,10 +159,12 @@ input {
     font-size: 1.5rem;
     text-align: center;
 }
+
 .btn-container {
     display: flex;
     justify-content: center;
 }
+
 .reset-btn {
     width: 20rem;
     height: 3rem;
@@ -160,9 +175,11 @@ input {
     font-size: 1.5rem;
 
 }
+
 :hover.reset-btn {
     background-color: rgb(89, 185, 185);
 }
+
 #bill-before-tip {
     background-color: hsl(189, 41%, 97%);
     width: 24rem;
@@ -176,6 +193,7 @@ input {
     height: 3rem;
     border: 0px;
 }
+
 .result-of-calculation-tip-container {
     display: grid;
     grid-template-columns: auto;
@@ -188,6 +206,7 @@ input {
     padding: 1rem 1rem 1rem 1rem;
 
 }
+
 .second-amount {
     display: flex;
     justify-content: space-between;
@@ -203,6 +222,7 @@ input {
     font-size: 1.2rem;
     padding-top: 1rem;
 }
+
 .amount-by-person-actual {
     font-size: 3rem;
     color: rgb(89, 185, 185);
@@ -214,10 +234,12 @@ input {
     color: rgb(89, 185, 185);
     font-weight: 700;
 }
-.empty-field-msg-bill{
-    visibility: hidden;
+
+.empty-field-msg-bill {
+    display: none;
 }
-.empty-field-msg-people{
+
+.empty-field-msg-people {
     display: none;
 }
 
@@ -225,11 +247,11 @@ input {
 @media only screen and (min-width: 911px) and (max-width: 1550px) {
 
     .container {
-   
+
         width: 57rem;
         height: 31rem;
         padding: 3rem 3rem 3rem 3rem;
-    
+
 
     }
 
@@ -244,6 +266,7 @@ input {
         color: white;
     }
 }
+
 /*--------------------------------------------MOBILE------------------------------------------------*/
 @media only screen and (min-width: 300px) and (max-width: 430px) {
 
@@ -253,16 +276,16 @@ input {
 
     .grid-container {
 
-       
+
         grid-template-columns: auto;
         gap: 2rem;
 
     }
 
     .left-container {
-  
+
         width: 10rem;
-        
+
     }
 
     .right-cotainer {
@@ -277,7 +300,7 @@ input {
     }
 
     input[name="bill-before-tip"] {
-        background-position: 5% 50%;  
+        background-position: 5% 50%;
     }
 
     input[name="number-of-people-input"] {
@@ -299,12 +322,12 @@ input {
 
     .select-tip-contaner>button {
 
-       width: 10rem;
+        width: 10rem;
         height: 3rem;
         font-size: 1rem;
         padding: 0;
         margin: 0;
-        
+
     }
 
     .custom-percent-tip {
@@ -312,8 +335,9 @@ input {
         width: 160px;
         height: 2.8rem;
         font-size: 1rem;
-    
+
     }
+
     .reset-btn {
         width: 20rem;
         height: 3rem;
@@ -327,7 +351,7 @@ input {
         font-size: 2rem;
     }
 
-    #number-of-people { 
+    #number-of-people {
         width: 20rem;
         height: 3rem;
         font-size: 2rem;
@@ -340,7 +364,56 @@ input {
 }
 
 /*--------------------------------------------TABLET------------------------------------------------*/
-@media only screen and (min-width: 430px) and (max-width: 911px) {
-   
-}
+@media only screen and (min-width: 601px) and (max-width: 910px) {
+    .container {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .grid-container {
+        width: 570px;
+    }
 
+    .left-container {
+        width: 285px;
+    }
+
+    .right-cotainer {
+        width: 285px;
+    }
+
+    #bill-before-tip {
+        width: 17rem;
+        height: 3rem;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .select-tip-contaner {
+        grid-template-columns: auto auto;
+
+    }
+
+    .select-tip-contaner>button {
+
+        width: 7rem;
+        height: 3rem;
+
+    }
+
+    .reset-btn {
+        width: 15rem;
+       margin-right: 1rem;
+       margin-top:3.8rem;
+
+    }
+    .first-amount{
+        justify-content: left;
+    }
+    .second-amount{
+        justify-content: left;
+    }
+    #number-of-people {
+        width: 17rem;
+        height: 3rem;
+        font-size: 2rem;
+    }
+}

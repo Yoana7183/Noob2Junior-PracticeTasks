@@ -17,6 +17,8 @@ const dom = {
 
 }
 
+
+
 dom.fivePercentTip[0].addEventListener("click", function () {
     tips.push(5)
 })
@@ -35,6 +37,7 @@ dom.twentyfivePercentTip[0].addEventListener("click", function () {
 dom.fiftyPercentTip[0].addEventListener("click", function () {
     tips.push(50)
 })
+
 
 const tips = []
 console.log(tips);
@@ -60,15 +63,19 @@ let getCurrentNumberOfPeople = function () {
 
 dom.numberOfPeople.addEventListener("change", getCurrentNumberOfPeople())
 
-function calculateAmountByPerson (bill, customerTip, people,tips) {
+function calculateAmountByPerson(bill, customerTip, people, tip) {
     if (bill === undefined || null) {
         console.log(`undefined current bill`);
     }
     console.log(bill);
     console.log(people);
-    let result = bill/people
+    tip=0
+    tip= tips[0]
 
- dom.amountByPerson[0].innerHTML = result
+
+    let result = (bill / people) * tip
+
+    dom.amountByPerson[0].innerHTML = result
 }
 
 calculateAmountByPerson(currentBill, customerTip, numberOfPeople, tips)
