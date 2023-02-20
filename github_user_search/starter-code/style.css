@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    background-color: rgba(246, 248, 255);
+}
+
+.git-hub-container {
+    width: 730px;
+  background-color: white;
+}
+
+.title-and-mode-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-container {
+    display: inline;
+}
+
+.main-grid {}
+
+.avatar-and-description {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: space-evenly;
+    width: 480px;
+    height: 85px;
+    background-color: rgba(246, 248, 255);
+}
+
+li {
+    list-style: none;
+}
