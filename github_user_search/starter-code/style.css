@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top:9rem;
+    padding-top: 9rem;
     padding-bottom: 9rem;
     background-color: rgba(246, 248, 255);
 }
@@ -45,8 +45,6 @@ body {
     justify-content: space-between;
     height: 38px;
     width: 730px;
-    left: 355px;
-    top: 144px;
     border-radius: 0px;
     background-color: rgba(246, 248, 255);
     padding-bottom: 2rem;
@@ -58,46 +56,74 @@ body {
     width: 750px;
     height: 69px;
     position: relative;
-    
+
 }
 
 #search-input {
     height: 69px;
     width: 730px;
-    border-radius: 0px;
-    background: #FEFEFE;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
     border-radius: 15px;
-   
-   
+    border: 0px;
+
+}
+
+#search-input::placeholder {
+    color: rgba(105, 124, 154);
+    font-size: 1.2rem;
+}
+
+input[name="search-input"] {
+    background-image: url("./assets/icon-search.svg");
+    background-position: 5% 50%;
+    background-repeat: no-repeat;
+}
+
+.dark-mode {
+    border: 0px;
+    background-color: rgba(246, 248, 255);
+    color: rgba(105, 124, 154);
+    cursor: pointer;
 }
 
 #btn-search {
     position: absolute;
-    top: 0;
     border-radius: 5px;
-    right: 0px;
+    right: 1.5rem;
     z-index: 2;
     border: none;
-    top: 2px;
+    /* top: 0.6rem; */
     height: 50px;
     width: 106px;
     cursor: pointer;
     color: white;
     background-color: #1e90ff;
-    transform: translateX(2px);
+    top: calc(35% - 24px/2 - 0.5px);
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+
 
 }
-
+.div-space{
+    padding: 1rem;
+    background-color: rgba(246, 248, 255);
+}
 .main-grid {
-    border: 1px solid black;
+  
     height: 419px;
     width: 730px;
-    left: 355px;
-    top: 311px;
     border-radius: 15px;
-    margin-top: 1rem;
-    
+  
+
 
 }
 
@@ -122,16 +148,18 @@ body {
     margin-left: 12rem;
     text-align: center;
     padding-top: 2rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    margin-top: 0.7rem;
-    margin-bottom: 0.7rem;
+    margin-bottom: 1rem;
 }
 
 li {
     list-style: none;
 }
-
+.numbers{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bolder;
+}
 .profile-details {}
 
 .footer-grid {
