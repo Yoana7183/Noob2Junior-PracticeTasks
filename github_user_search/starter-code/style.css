@@ -110,8 +110,9 @@ input[name="search-input"] {
 
     color: #FFFFFF;
 
-
-
+}
+#btn-search:hover{
+    opacity: 60%;
 }
 .div-space{
     padding: 1rem;
