@@ -6,57 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | GitHub user search app</title>
+  <style>
+    body{
+      font-family: "Space Mono";
+    }
+  </style>
 </head>
 
 <body>
-  <section class="git-hub-container">
-    <div class="title-and-mode-container">
-      <div class="title">devfinder</div>
-      <div class="light-mode"> Light</div>
-      <div class="dark-mode"> Dark</div>
-    </div>
-    <div class="search-container">
-      <input type="text" name="search" id="search-input" placeholder=" Search GitHub username...">
-      <button type="submit"> Search</button>
-    </div>
-    <section class="main-grid">
-      <main class="avatar-and-description">
-        <div class="avatar"><img src="./assets/avatar.svg" alt="avatar"></div>
-        <div class="name">The Octocat</div>
-        <div class="user-name">@ostocat</div>
-        <div class="time-stamp-info">Joined 25 Jan 2011</div>
-        <div class="bio">This profile</div>
-      </main>
-      <main class="profile-details">
-        <div class="repos">
-          <li>Repos</li>
-          <li>8</li>
-        </div>
-        <div class="followers">
-          <li>Followers</li>
-          <li>3938</li>
-        </div>
+  <div class="flex">
+    <section class="git-hub-container">
+      <div class="title-and-mode-container">
+        <div class="title">devfinder</div>
+        <div class="light-mode"> Light</div>
+        <div class="dark-mode"> Dark</div>
+      </div>
+      <div class="search-container">
+        <input type="text" name="search" id="search-input" placeholder=" Search GitHub username...">
+        <button type="submit" id="btn-search"> Search</button>
+      </div>
+      <section class="main-grid">
+        <main class="avatar-and-description">
+          <div class="avatar"><img src="./assets/avatar.svg" alt="avatar"></div>
+          <ul>
+            <h1 class="name">The Octocat</h1>
+            <li class="user-name">@ostocat</li>
+            <li class="bio">This profile has no bio</li>
+          </ul>
+          <div class="time-stamp-info">Joined 25 Jan 2011</div>
+        </main>
+        <main class="profile-details">
+          <div class="repos">
+            <li>Repos</li>
+            <li>8</li>
+          </div>
+          <div class="followers">
+            <li>Followers</li>
+            <li>3938</li>
+          </div>
 
-        <div class="following">
-          <li>Following</li>
-          <li>9</li>
-        </div>
-      </main>
+          <div class="following">
+            <li>Following</li>
+            <li>9</li>
+          </div>
+        </main>
 
-      <footer>
-        <div>
-          <img src="./assets/icon-location.svg" alt="icon-location">
-          <img src="./assets/icon-twitter.svg" alt="icon-twitter">
-          <img src="./assets/icon-website.svg" alt="icon-website">
-          <img src="./assets/icon-company.svg" alt="icon-company">
-        </div>
-      </footer>
+        <footer>
+          <div class="footer-grid">
+            <div> <img src="./assets/icon-location.svg" alt="icon-location">San Francisco</div>
+            <div> <img src="./assets/icon-twitter.svg" alt="icon-twitter">Not Available</div>
+            <div> <img src="./assets/icon-website.svg" alt="icon-website">https://github.blog/</div>
+            <div> <img src="./assets/icon-company.svg" alt="icon-company">@github</div>
+          </div>
+        </footer>
+      </section>
     </section>
-  </section>
-
+  </div>
 </body>
 
 </html>
