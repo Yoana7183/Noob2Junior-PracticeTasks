@@ -3,16 +3,42 @@
 
 }
 
+/* bg- darker 
+fg - text
+pg - colour inside main*/
+:root,
+:root.light {
+
+    --color-bg: rgb(251, 251, 251);
+    --color-fg: rgba(105, 124, 154);
+    --color-pg: rgba(246, 248, 255);
+
+
+}
+
+:root.dark {
+    --color-bg: rgb(30, 42, 71);
+    --color-fg: #ffffff;
+    --color-pg: rgb(20, 29, 47);
+
+}
+
 body {
-    background-color: rgba(246, 248, 255);
-    color: rgba(105, 124, 154);
+    background-color: var(--color-pg);
+    color: var(--color-fg);
     font-size: 15px;
+
+}
+
+.main-grid {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
 }
 
 .title {
     font-size: 2rem;
     font-weight: bold;
-    color: black;
+    color: var(--color-fg);
 }
 
 .flex {
@@ -21,7 +47,7 @@ body {
     flex-wrap: wrap;
     padding-top: 9rem;
     padding-bottom: 9rem;
-    background-color: rgba(246, 248, 255);
+    background-color: var(--color-pg);
 }
 
 .name {
@@ -33,7 +59,7 @@ body {
 .git-hub-container {
 
     width: 730px;
-    background-color: white;
+    background-color: var(--color-pg);
 }
 
 .light-mode {
@@ -46,7 +72,7 @@ body {
     height: 38px;
     width: 730px;
     border-radius: 0px;
-    background-color: rgba(246, 248, 255);
+    background-color: var(--color-pg);
     padding-bottom: 2rem;
 }
 
@@ -81,7 +107,7 @@ input[name="search-input"] {
 
 .dark-mode {
     border: 0px;
-    background-color: rgba(246, 248, 255);
+    background-color: var(--color-pg);
     color: rgba(105, 124, 154);
     cursor: pointer;
 }
@@ -111,19 +137,22 @@ input[name="search-input"] {
     color: #FFFFFF;
 
 }
-#btn-search:hover{
+
+#btn-search:hover {
     opacity: 60%;
 }
-.div-space{
+
+.div-space {
     padding: 1rem;
-    background-color: rgba(246, 248, 255);
+    background-color: var(--color-pg);
 }
+
 .main-grid {
-  
+
     height: 419px;
     width: 730px;
     border-radius: 15px;
-  
+
 
 
 }
@@ -144,7 +173,7 @@ input[name="search-input"] {
     justify-content: space-evenly;
     width: 480px;
     height: 85px;
-    background-color: rgba(246, 248, 255);
+    background-color: var(--color-pg);
     flex-flow: row;
     margin-left: 12rem;
     text-align: center;
@@ -156,11 +185,13 @@ input[name="search-input"] {
 li {
     list-style: none;
 }
-.numbers{
+
+.numbers {
     font-size: 1.5rem;
     color: black;
     font-weight: bolder;
 }
+
 .profile-details {}
 
 .footer-grid {
