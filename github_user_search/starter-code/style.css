@@ -30,7 +30,7 @@ body {
     color: var(--color-fg);
     font-size: 15px;
 
-    height: 900px;
+    height: 600px;
 
 }
 
@@ -88,6 +88,11 @@ body {
     height: 69px;
     position: relative;
 
+}
+
+.bio {
+
+    text-overflow: ellipsis;
 }
 
 #search-input {
@@ -168,7 +173,7 @@ input[name="search-input"] {
 .avatar-and-description {
     display: flex;
     margin: 2rem;
-
+    flex-flow: row;
     flex-wrap: wrap;
 }
 
@@ -262,7 +267,7 @@ li {
 @media only screen and (min-width: 500px) and (max-width: 800px) {
 
     body {
-        height: 900;
+        height: 600;
     }
 
     .git-hub-container {
@@ -356,17 +361,19 @@ li {
 
     .time-stamp-info {
         margin-left: 12em;
-        margin-top: -5em;
-    
+        margin-top: -6em;
+
     }
 
     #profile-info {
         /* margin-top: 1em; */
     }
-.bio{
-    margin-top: 5em;
-    margin-left: -5rem;
-}
+
+    .bio {
+        margin-top: 5em;
+        margin-left: -5rem;
+    }
+
     .profile-details {
         font-size: 1.3em;
         margin: 0;
