@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-
-}
-
 /* bg- lighter in dark mode 
 fg - text
 pg - colour inside main*/
@@ -12,6 +7,8 @@ pg - colour inside main*/
     --color-bg: rgb(251, 251, 251);
     --color-fg: rgba(105, 124, 154);
     --color-pg: rgba(246, 248, 255);
+    --color-white-black: rgb(0, 0, 0);
+
     --image-theme: url("./assets/icon-moon.svg")
 }
 
@@ -19,14 +16,21 @@ pg - colour inside main*/
     --color-bg: rgb(30, 42, 71);
     --color-fg: #ffffff;
     --color-pg: rgb(20, 29, 47);
+    --color-white-black: rgb(255, 255, 255);
     --image-theme: url("./assets/icon-sun.svg")
 }
 
+* {
+    margin: 0;
+
+}
 
 body {
-    background-color: var(--color-pg);
+    background-color: var(--color-fg);
     color: var(--color-fg);
     font-size: 15px;
+
+    height: 900px;
 
 }
 
@@ -35,12 +39,14 @@ body {
     color: var(--color-fg);
     padding: 1em;
     border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border: 0px;
 }
 
 .title {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--color-fg);
+    color: var(--color-white-black);
 }
 
 .flex {
@@ -55,7 +61,7 @@ body {
 .name {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--color-fg);
+    color: var(--color-white-black);
 }
 
 .git-hub-container {
@@ -92,6 +98,8 @@ body {
     border: 0px;
     background-color: var(--color-bg);
 
+    font-size: 2rem;
+
 }
 
 #search-input::placeholder {
@@ -107,8 +115,10 @@ input[name="search-input"] {
 
 .theme-mode {
     background-image: var(--image-theme);
+    background-position-x: left;
     background-repeat: no-repeat;
     background-size: 2em;
+    padding-right: 1em;
 
 
 }
@@ -140,7 +150,7 @@ input[name="search-input"] {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: var(--color-fg);
+
 }
 
 
@@ -199,10 +209,19 @@ li {
     width: 480px;
     height: 85px;
     margin-left: 12rem;
+    padding-bottom: 2em;
+}
+
+#mode {
+    opacity: 0;
 }
 
 /*-------------------------------------------------------------DESKTOP---------------------------------------------------------*/
 @media only screen and (min-width: 911px) and (max-width: 1440px) {
+    body {
+        height: 900;
+    }
+
     .git-hub-container {
         width: 730px;
     }
@@ -233,6 +252,7 @@ li {
 
     .footer-grid {
         margin-left: 12em;
+
     }
 
 }
@@ -240,6 +260,10 @@ li {
 /*-------------------------------------------------------------DESKTOP- END---------------------------------------------------------*/
 /*-------------------------------------------------------------TABLET---------------------------------------------------------*/
 @media only screen and (min-width: 500px) and (max-width: 800px) {
+
+    body {
+        height: 900;
+    }
 
     .git-hub-container {
         width: 537px;
@@ -256,21 +280,112 @@ li {
     .search-container {
         width: 537px
     }
-}
-
-/* .main-grid {
-    height: 419px;
-    width: 573px;
-
-} */
 
 
-.profile-details {
-    margin-left: 1em;
-}
+    .profile-details {
+        margin-left: 1em;
+    }
 
-.footer-grid {
-    margin-left: 1em;
+    .footer-grid {
+        margin-left: 1em;
+    }
 }
 
 /*-------------------------------------------------------------TABLET - END---------------------------------------------------------*/
+
+/*-------------------------------------------------------------MOBILE---------------------------------------------------------*/
+@media only screen and (min-width: 360px) and (max-width: 499px) {
+    body {
+        font-size: 10px;
+        height: 600px;
+    }
+
+    .avatar>img {
+        width: 8em;
+        height: 8em;
+    }
+
+    .name {
+        font-size: 1.3em;
+    }
+
+    .title {
+        font-size: 1.5rem;
+
+    }
+
+    .avatar-and-description {
+        margin: 1em;
+    }
+
+    .git-hub-container {
+        width: 327px;
+    }
+
+    .title-and-mode-container {
+        width: 327px;
+    }
+
+    #search-input {
+        width: 327px;
+
+    }
+
+    .search-container {
+        width: 327px;
+    }
+
+    #search-input::placeholder {
+
+        font-size: 0.8rem;
+    }
+
+    #btn-search {
+        margin-top: 0.5em;
+        height: 35px;
+        width: 80px;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    .flex {
+
+        padding-bottom: 15rem;
+
+    }
+
+    .time-stamp-info {
+        margin-left: 12em;
+        margin-top: -5em;
+    
+    }
+
+    #profile-info {
+        /* margin-top: 1em; */
+    }
+.bio{
+    margin-top: 5em;
+    margin-left: -5rem;
+}
+    .profile-details {
+        font-size: 1.3em;
+        margin: 0;
+        width: 279px;
+        height: 85px;
+        margin-left: 1em;
+        margin-bottom: 1em;
+    }
+
+
+    .profile-details>div>li {
+        font-size: 0.8rem;
+    }
+
+    .footer-grid {
+        margin-left: 1em;
+        width: 327px;
+        grid-template-columns: auto
+    }
+}
+
+/*-------------------------------------------------------------MOBILE - END---------------------------------------------------------*/

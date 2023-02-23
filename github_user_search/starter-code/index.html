@@ -25,7 +25,11 @@
       <div class="title-and-mode-container">
         <div class="title">devfinder</div>
         <div class="theme-mode">
-          <input type="checkbox" id="mode" name="mode"> DARK/LIGHT</input>
+          <label for="mode">
+            <input type="checkbox" id="mode" name="mode">
+            <li id="dark-id" style="display: inline; padding-left: 1em;">DARK </li>
+            <li id="light-id" style="display: inline; padding-left: 1em;">LIGHT </li></input>
+          </label>
         </div>
       </div>
       <div class="search-container">
@@ -38,10 +42,12 @@
       <section class="main-grid">
         <main class="avatar-and-description">
           <div class="avatar"><img src="./assets/avatar.svg" alt="avatar"></div>
-          <ul>
+          <ul id="profile-info">
             <h1 class="name">The Octocat</h1>
             <li class="user-name" style="color:rgba(0, 121, 255, 1)">@ostocat</li>
-            <li class="bio">This profile has no bio</li>
+            <div class="bio">This profile has no bio
+              <!-- Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros -->
+            </div>
           </ul>
           <div class="time-stamp-info">Joined 25 Jan 2011</div>
         </main>
@@ -66,7 +72,7 @@
             <div> <img src="./assets/icon-location.svg" alt="icon-location"> San Francisco</div>
             <div> <img src="./assets/icon-twitter.svg" alt="icon-twitter"> Not Available</div>
             <div> <img src="./assets/icon-website.svg" alt="icon-website"> https://github.blog/</div>
-            <div> <img src="./assets/icon-company.svg" alt="icon-company"> @ github</div>
+            <div> <img src="./assets/icon-company.svg" alt="icon-company"> @github</div>
           </div>
         </footer>
       </section>
@@ -75,14 +81,19 @@
   </div>
   <script>
     const modeBtn = document.getElementById('mode');
+
     modeBtn.onchange = (e) => {
       if (modeBtn.checked === true) {
         document.documentElement.classList.remove("light")
         document.documentElement.classList.add("dark")
+        document.getElementById("dark-id").style.display = "none"
+        document.getElementById("light-id").style.display = 'inline'
         window.localStorage.setItem('mode', 'dark');
       } else {
         document.documentElement.classList.remove("dark")
         document.documentElement.classList.add("light")
+        document.getElementById("light-id").style.display = "none"
+        document.getElementById("dark-id").style.display = 'inline'
         window.localStorage.setItem('mode', 'light');
       }
     }
@@ -92,12 +103,16 @@
       modeBtn.checked = true;
       document.documentElement.classList.remove("light")
       document.documentElement.classList.add("dark")
+      document.getElementById("dark-id").style.display = "none"
+      document.getElementById("light-id").style.display = 'inline'
     }
 
     if (mode == 'light') {
       modeBtn.checked = false;
       document.documentElement.classList.remove("dark")
       document.documentElement.classList.add("light")
+      document.getElementById("light-id").style.display = "none"
+      document.getElementById("dark-id").style.display = 'inline'
     }
   </script>
 </body>
