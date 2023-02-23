@@ -3,7 +3,7 @@
 
 }
 
-/* bg- darker 
+/* bg- lighter in dark mode 
 fg - text
 pg - colour inside main*/
 :root,
@@ -12,16 +12,16 @@ pg - colour inside main*/
     --color-bg: rgb(251, 251, 251);
     --color-fg: rgba(105, 124, 154);
     --color-pg: rgba(246, 248, 255);
-
-
+    --image-theme: url("./assets/icon-moon.svg")
 }
 
 :root.dark {
     --color-bg: rgb(30, 42, 71);
     --color-fg: #ffffff;
     --color-pg: rgb(20, 29, 47);
-
+    --image-theme: url("./assets/icon-sun.svg")
 }
+
 
 body {
     background-color: var(--color-pg);
@@ -33,6 +33,8 @@ body {
 .main-grid {
     background-color: var(--color-bg);
     color: var(--color-fg);
+    padding: 1em;
+    border-radius: 15px;
 }
 
 .title {
@@ -53,7 +55,7 @@ body {
 .name {
     font-size: 2rem;
     font-weight: bold;
-    color: black;
+    color: var(--color-fg);
 }
 
 .git-hub-container {
@@ -62,9 +64,6 @@ body {
     background-color: var(--color-pg);
 }
 
-.light-mode {
-    display: none;
-}
 
 .title-and-mode-container {
     display: flex;
@@ -91,6 +90,7 @@ body {
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
     border-radius: 15px;
     border: 0px;
+    background-color: var(--color-bg);
 
 }
 
@@ -105,11 +105,21 @@ input[name="search-input"] {
     background-repeat: no-repeat;
 }
 
-.dark-mode {
+.theme-mode {
+    background-image: var(--image-theme);
+    background-repeat: no-repeat;
+    background-size: 2em;
+
+
+}
+
+#mode {
     border: 0px;
     background-color: var(--color-pg);
-    color: rgba(105, 124, 154);
     cursor: pointer;
+
+
+
 }
 
 #btn-search {
@@ -118,7 +128,6 @@ input[name="search-input"] {
     right: 1.5rem;
     z-index: 2;
     border: none;
-    /* top: 0.6rem; */
     height: 50px;
     width: 106px;
     cursor: pointer;
@@ -131,12 +140,10 @@ input[name="search-input"] {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-
-    /* identical to box height */
-
-    color: #FFFFFF;
-
+    color: var(--color-fg);
 }
+
+
 
 #btn-search:hover {
     opacity: 60%;
@@ -147,15 +154,6 @@ input[name="search-input"] {
     background-color: var(--color-pg);
 }
 
-.main-grid {
-
-    height: 419px;
-    width: 730px;
-    border-radius: 15px;
-
-
-
-}
 
 .avatar-and-description {
     display: flex;
@@ -174,6 +172,7 @@ input[name="search-input"] {
     width: 480px;
     height: 85px;
     background-color: var(--color-pg);
+    color: var(--color-fg);
     flex-flow: row;
     margin-left: 12rem;
     text-align: center;
@@ -188,7 +187,7 @@ li {
 
 .numbers {
     font-size: 1.5rem;
-    color: black;
+    color: var(--color-fg);
     font-weight: bolder;
 }
 
@@ -201,3 +200,77 @@ li {
     height: 85px;
     margin-left: 12rem;
 }
+
+/*-------------------------------------------------------------DESKTOP---------------------------------------------------------*/
+@media only screen and (min-width: 911px) and (max-width: 1440px) {
+    .git-hub-container {
+        width: 730px;
+    }
+
+    .title-and-mode-container {
+        width: 730px;
+    }
+
+    #search-input {
+        width: 730px;
+    }
+
+    .search-container {
+        width: 730px;
+    }
+
+    /* .main-grid {
+        height: 419px;
+        width: 730px;
+
+    } */
+
+
+
+    .profile-details {
+        margin-left: 12em;
+    }
+
+    .footer-grid {
+        margin-left: 12em;
+    }
+
+}
+
+/*-------------------------------------------------------------DESKTOP- END---------------------------------------------------------*/
+/*-------------------------------------------------------------TABLET---------------------------------------------------------*/
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+
+    .git-hub-container {
+        width: 537px;
+    }
+
+    .title-and-mode-container {
+        width: 537px;
+    }
+
+    #search-input {
+        width: 537px
+    }
+
+    .search-container {
+        width: 537px
+    }
+}
+
+/* .main-grid {
+    height: 419px;
+    width: 573px;
+
+} */
+
+
+.profile-details {
+    margin-left: 1em;
+}
+
+.footer-grid {
+    margin-left: 1em;
+}
+
+/*-------------------------------------------------------------TABLET - END---------------------------------------------------------*/
