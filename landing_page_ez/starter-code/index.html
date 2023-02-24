@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Equalizer landing page</title>
 </head>
+<style>
+
+</style>
 
 <body>
   <section class="main">
@@ -24,20 +30,49 @@
         way your music sounds with a professional grade parametric EQ & volume mixer. Control
         bass, mids, treble, gain control, reverb, and more!
       </div>
-      <div>
-        <div class="card-promotion-content">
-          <div class="title-content">Premium EQ</div>
-          <div class="description-content">Get expert-level control with a robust equalizer, volume mixer, and spatial
-            audio. Take
-            your listening experience to a whole new level and access all our incredible features!</div>
-          <div class="price"> $4 / month</div>
+      <div class="cards-container">
+        <div class="dark-card-container">
+          <div class="phone-img-container">
+            <div class="phone"></div>
+          </div>
+          <div class="detail-between-main-cards">
+            <div class="detail"></div>
+          </div>
+          <div class="card-promotion-content">
+            <div class="card">
+              <div class="title-content">Premium EQ</div>
+              <div class="description-content">Get expert-level control with a robust equalizer, volume mixer, and
+                spatial
+                audio. Take
+                your listening experience to a whole new level and access all our incredible features!</div>
+              <div class="price-container">
+                <div class="price"> $4 </div>
+                <div class="per-month">/ month</div>
+              </div>
+
+              <div class="buttons">
+                <button class="ios-btn">iOS Download iOS Download</button>
+                <button class="android-btn"> Android Download</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <button>iOS Download iOS Download</button>
-        <button> Android Download</button>
       </div>
       <footer>
-        <li>All rights reserved © Equalizer 2021</li>
-        <li> Have any problems? Contact us via social media or email us at equalizer@example.com</li>
+        <div class="logo-footer">
+          <div> <img src="./assets/logo.svg" alt="" srcset=""></div>
+        </div>
+        <div class="footer-li">
+          <div>All rights reserved © Equalizer 2021</div>
+          <div>Have any problems? Contact us via social media or</div>
+          <div>email us at <strong>equalizer@example.com</strong></div>
+        </div>
+        <div class="social-media-links-img">
+          <li><img src="./assets/icon-facebook.svg" alt="" srcset=""></li>
+          <li><img src="./assets/icon-instagram.svg" alt=""></li>
+          <li><img src="./assets/icon-twitter.svg" alt="" srcset=""></li>
+
+        </div>
       </footer>
 
 

@@ -1,41 +1,219 @@
 * {
     margin: 0;
-   
+
 }
-.main{
+
+body {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+}
+
+.main {
     background-image: url("./assets/bg-main-desktop.png");
     background-repeat: no-repeat;
-    height: 1500px;
-    padding-left: 5em;
-    
+    padding-left: 9em;
+    background-size: cover;
 }
-.logo{
+
+
+.logo {
     width: 12rem;
 }
-.header-img{
+
+.header-img {
 
     background-image: url("./assets/logo.svg");
     background-repeat: no-repeat;
     width: 10em;
     height: 10em;
     margin-top: -25rem;
-    
+
 }
-.right-element{
+
+.right-element {
     display: flex;
-    justify-content:end ;
-   
+    justify-content: end;
+
 }
-.element{
-    
+
+.element {
+
     background-image: url("./assets/bg-pattern-1.svg");
     background-repeat: no-repeat;
     width: 312px;
     height: 468px;
 }
-.title-main{
-    font-size: 88px
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.content-main{
-    width:900px
+
+.title-main {
+    font-size: 88px;
+
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    width: 1015px;
+    height: 176px;
+    /* or 100% */
+    letter-spacing: -1px;
+
+    color: #191826;
+
+
+}
+
+.content-main {
+    padding: 3em;
+    width: 825px;
+    height: 102px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #191826;
+}
+
+.cards-container {
+    padding-bottom: 10em;
+}
+
+.dark-card-container {
+    width: 1110px;
+    height: 600px;
+    margin-top: 10em;
+    color: white;
+    background-color: #191826;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.phone {
+    background-image: url("./assets/illustration-app.png");
+    background-size: cover;
+    width: 312px;
+    height: 642px;
+    margin-top: -171px;
+    margin-left: 5em;
+    position: relative;
+
+}
+
+.card-promotion-content {
+    position: relative;
+    width: 446px;
+    height: 625px;
+    background: #FA7453;
+    border-radius: 12px;
+    margin-top: 120px;
+    margin-left: -5.5em
+}
+
+.card {
+    padding: 3.2em;
+}
+
+.phone-img-container {
+    width: 312px;
+    height: 642px;
+}
+
+.detail {
+    background-image: url("./assets/bg-pattern-2.svg");
+    width: 312px;
+    height: 468px;
+}
+
+.title-content {
+    width: 333px;
+    height: 52px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #FCFAF9;
+    margin-bottom: 1em;
+}
+
+.description-content {
+    width: 333px;
+    height: 170px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #FCFAF9;
+    padding-bottom: 1em;
+
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 165px;
+    height: 52px;
+    padding-bottom: 1em;
+}
+
+.price {
+
+    top: calc(50% - 52px/2);
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 52px;
+    color: #FCFAF9;
+
+
+}
+
+.per-month {
+    padding: 1em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ios-btn {
+    width: 333px;
+    height: 61px;
+    background: #191826;
+    border-radius: 12px;
+    color: #FCFAF9;
+    margin: 0.7em;
+    border: 0px;
+    cursor: pointer;
+}
+
+.android-btn {
+    width: 333px;
+    height: 61px;
+    margin: 0.7em;
+    color: #191826;
+    background: #FCFAF9;
+    border-radius: 12px;
+    border: 0px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5em;
+    width: 1110px;
+    height: 79px;
+}
+
+.social-media-links-img {
+    list-style: none;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media-links-img>li {
+    padding-left: 0.5em;
 }
