@@ -186,6 +186,11 @@ body {
     margin: 0.7em;
     border: 0px;
     cursor: pointer;
+
+}
+
+.ios-btn:hover {
+    background-color: rgb(102, 226, 220);
 }
 
 .android-btn {
@@ -197,6 +202,10 @@ body {
     border-radius: 12px;
     border: 0px;
     cursor: pointer;
+}
+
+.android-btn:hover {
+    background-color: rgb(225, 185, 100);
 }
 
 footer {
@@ -217,3 +226,89 @@ footer {
 .social-media-links-img>li {
     padding-left: 0.5em;
 }
+
+/*-------------------------------------------------------------TABLET---------------------------------------------------------*/
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .main {
+        background-image: url("./assets/bg-main-tablet.png");
+        background-repeat: no-repeat;
+        padding-left: 2em;
+        background-size: cover;
+    }
+
+
+    .header-img {
+        margin-top: -21em;
+    }
+
+    .element {
+
+        width: 266.67px;
+        height: 400px;
+    }
+
+    .main-container {
+        width: 520px;
+    }
+
+    .text-content-main {
+        width: 520px;
+    }
+
+    .title-main {
+        font-size: 64px;
+        line-height: 64px;
+        width: 300px;
+    }
+
+    .content-main {
+        width: 32em;
+        padding-left: 0px;
+        line-height: 30px;
+        padding-top: 5em;
+        padding-bottom: 3em;
+        text-align: left;
+    }
+
+    .cards-container {
+        width: 696px;
+        margin-left: 5px;
+    }
+
+    .dark-card-container {
+        width: 696px;
+    }
+
+    .phone-img-container {
+        width: 270px;
+        height: 556px;
+
+    }
+
+    .phone {
+        width: 270px;
+        height: 556px;
+        margin-top: -120px;
+    }
+
+    .detail {
+        margin-left: -3em;
+    }
+
+    .card-promotion-content {
+        width: 399px;
+        height: 546px;
+        margin-left: -16.5em;
+        position: relative;
+        margin-top: 13em;
+    
+    }
+    .card{
+        padding: 1.5em;
+    }
+    footer{
+        width: 696px;
+    }
+}
+
+/*-------------------------------------------------------------TABLET - END---------------------------------------------------------*/
