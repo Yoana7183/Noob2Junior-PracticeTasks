@@ -8,6 +8,10 @@ body {
     font-style: normal;
 }
 
+.logo {
+    width: 12rem;
+}
+
 .main {
     background-image: url("./assets/bg-main-desktop.png");
     background-repeat: no-repeat;
@@ -15,10 +19,6 @@ body {
     background-size: cover;
 }
 
-
-.logo {
-    width: 12rem;
-}
 
 .header-img {
 
@@ -227,8 +227,19 @@ footer {
     padding-left: 0.5em;
 }
 
+/*-------------------------------------------------------------DESKTOP---------------------------------------------------------*/
+@media only screen and (min-width: 911px) and (max-width: 1440px) {
+    .main {
+        background-image: url("./assets/bg-main-desktop.png");
+        background-repeat: no-repeat;
+        padding-left: 9em;
+        background-size: cover;
+    }
+}
+
+/*-------------------------------------------------------------DESKTOP - END---------------------------------------------------------*/
 /*-------------------------------------------------------------TABLET---------------------------------------------------------*/
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+@media only screen and (min-width: 600px) and (max-width: 910px) {
     .main {
         background-image: url("./assets/bg-main-tablet.png");
         background-repeat: no-repeat;
@@ -301,14 +312,206 @@ footer {
         margin-left: -16.5em;
         position: relative;
         margin-top: 13em;
-    
+
     }
-    .card{
+
+    .card {
         padding: 1.5em;
     }
-    footer{
+
+    footer {
         width: 696px;
     }
 }
 
 /*-------------------------------------------------------------TABLET - END---------------------------------------------------------*/
+
+/*-------------------------------------------------------------MOBILE---------------------------------------------------------*/
+@media only screen and (min-width: 300px) and (max-width: 599px) {
+
+    .main {
+        background-image: url("./assets/bg-main-mobile.png");
+        background-repeat: no-repeat;
+        padding-left: 0px;
+
+    }
+
+    .header-img {
+
+        width: 10em;
+        height: 8em;
+        margin-top: -25rem;
+        margin-left: 1em;
+
+    }
+
+    .element {
+
+        visibility: hidden;
+    }
+
+    .title-main {
+        font-size: 3em;
+        width: 327px;
+        height: 144px;
+        line-height: 48px;
+        padding-left: 16px;
+    }
+
+    .content-main {
+        padding: 0px;
+        width: 327px;
+        height: 156px;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 26px;
+        margin-left: 1em;
+
+    }
+
+    .dark-card-container {
+        width: 375px;
+        height: 600px;
+
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .phone {
+        background-image: url("./assets/illustration-app.png");
+        background-size: cover;
+        width: 208.97px;
+        height: 430px;
+        margin-top: -171px;
+        margin-left: 5em;
+        position: relative;
+
+    }
+
+    .card-promotion-content {
+        position: relative;
+        width: 375px;
+        height: 546px;
+        margin-top: 26em;
+
+        margin-left: -30.6em;
+    }
+
+    .card {
+        padding: 1em
+    }
+
+    .phone-img-container {
+        width: 208.97px;
+        height: 430px;
+    }
+
+    .detail-between-main-cards {
+        width: 17.5em;
+        height: 26.25em;
+    }
+
+    .detail {
+        margin-left: -10.7em;
+    }
+
+    .cards-container {
+        padding-bottom: 25em;
+    }
+
+
+    /* .title-content {
+        width: 333px;
+        height: 52px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52px;
+        color: #FCFAF9;
+        margin-bottom: 1em;
+    }
+
+    .description-content {
+        width: 333px;
+        height: 170px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+        color: #FCFAF9;
+        padding-bottom: 1em;
+
+    }
+
+    .price-container {
+        display: flex;
+        justify-content: space-evenly;
+        width: 165px;
+        height: 52px;
+        padding-bottom: 1em;
+    }
+
+    .price {
+
+        top: calc(50% - 52px/2);
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 52px;
+        color: #FCFAF9;
+
+
+    }
+
+    .per-month {
+        padding: 1em;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+
+    }
+*/
+    .ios-btn {
+        width: 296px;
+        height: 61px;
+
+
+    }
+
+    .ios-btn:hover {
+        background-color: rgb(102, 226, 220);
+    }
+
+    .android-btn {
+        width: 296px;
+        height: 61px;
+    }
+
+    .android-btn:hover {
+        background-color: rgb(225, 185, 100);
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5em;
+        width: 375px;
+        height: 79px;
+    }
+
+    .social-media-links-img {
+        list-style: none;
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-media-links-img>li {
+        padding-left: 0.5em;
+    }
+
+
+}
+
+/*-------------------------------------------------------------MOBILE- END---------------------------------------------------------*/
