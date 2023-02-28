@@ -332,7 +332,8 @@ footer {
     .main {
         background-image: url("./assets/bg-main-mobile.png");
         background-repeat: no-repeat;
-        padding-left: 0px;
+    
+        padding-left: calc(50% - 200px);
 
     }
 
@@ -396,7 +397,7 @@ footer {
         height: 546px;
         margin-top: 26em;
 
-        margin-left: -30.6em;
+        margin-left: -30.5em;
     }
 
     .card {
@@ -421,57 +422,6 @@ footer {
         padding-bottom: 25em;
     }
 
-
-    /* .title-content {
-        width: 333px;
-        height: 52px;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 52px;
-        color: #FCFAF9;
-        margin-bottom: 1em;
-    }
-
-    .description-content {
-        width: 333px;
-        height: 170px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 34px;
-        color: #FCFAF9;
-        padding-bottom: 1em;
-
-    }
-
-    .price-container {
-        display: flex;
-        justify-content: space-evenly;
-        width: 165px;
-        height: 52px;
-        padding-bottom: 1em;
-    }
-
-    .price {
-
-        top: calc(50% - 52px/2);
-        font-weight: 700;
-        font-size: 65px;
-        line-height: 52px;
-        color: #FCFAF9;
-
-
-    }
-
-    .per-month {
-        padding: 1em;
-    }
-
-    .buttons {
-        display: flex;
-        flex-direction: column;
-
-    }
-*/
     .ios-btn {
         width: 296px;
         height: 61px;
@@ -494,11 +444,15 @@ footer {
 
     footer {
         display: flex;
-        justify-content: space-between;
-        padding-top: 5em;
-        width: 375px;
-        height: 79px;
+        flex-direction: column;
+        padding-top: 2em;
+        width: calc(100% - 100px);
+        height: 8em;
+        padding-left: 1em;
     }
+ .logo{
+    padding-bottom: 2em;
+ }
 
     .social-media-links-img {
         list-style: none;
@@ -506,11 +460,15 @@ footer {
         display: flex;
         flex-direction: row;
     }
-
+.footer-li{
+    padding-bottom: 2em;
+}
     .social-media-links-img>li {
         padding-left: 0.5em;
     }
-
+.social-media-links-img{
+    padding-bottom: 2em;
+}
 
 }
 
