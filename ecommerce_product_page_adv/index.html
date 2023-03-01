@@ -1,44 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | E-commerce product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      font-family: 'Kumbh Sans'
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <div class="center-page-flex">
+    <div class="flex-page"></div>
+    <section>
+      <nav>
+        <div class="logo"></div>
+        <div class="menu">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </div>
+        <div class="cart-avatar-container">
+          <div class="cart"> </div>
+          <div class="avatar"> </div>
+        </div>
+      </nav>
+      <section>
+        <main>
+          <div class="product-images">
+            <div class="img-container">
+              <div class="main-product-img"></div>
+            </div>
+            <div class="mini-images"></div>
+          </div>
+          <div class="info-container">
+            <div class="info-for-product">
+              <div class="company-logo">Sneaker Company</div>
+              <div class="product-name">Fall Limited Edition Sneakers</div>
+              <div class="product-description">These low-profile sneakers are your perfect casual wear companion.
+                Featuring
+                a
+                durable rubber outer sole, they will withstand everything the weather can offer.</div>
+              <div class="price">
+                <div class="actual-price"> $125.00
+                  <div class="percent-of-discount"> 50%</div>
+                </div>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+                <div class="price-before-discount"> $250.00</div>
+              </div>
+              <div class="quantity">
+                <div class="add-remove-quantity">
 
-  Sneaker Company
 
-  Fall Limited Edition Sneakers
+                  <div class="counter">
+                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                    <input type="text" value="1">
+                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                  </div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
 
-  $125.00
-  50%
-  $250.00
+                </div>
+                <button class="add-to-cart">Add to cart</button>
+              </div>
+            </div>
+          </div>
 
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        </main>
+      </section>
+    </section>
+
   </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Nakova Yoana</a>.
+  </div>
+  <script>
+    function increaseCount(a, b) {
+      var input = b.previousElementSibling;
+      var value = parseInt(input.value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      input.value = value;
+    }
+
+    function decreaseCount(a, b) {
+      var input = b.nextElementSibling;
+      var value = parseInt(input.value, 10);
+      if (value > 1) {
+        value = isNaN(value) ? 0 : value;
+        value--;
+        input.value = value;
+      }
+    }
+  </script>
 </body>
+
 </html>
