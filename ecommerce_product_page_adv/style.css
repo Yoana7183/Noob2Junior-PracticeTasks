@@ -41,6 +41,7 @@ main {
     background-repeat: no-repeat;
     margin-top: 2em;
     padding-left: 10em;
+    cursor: pointer;
 }
 
 
@@ -53,6 +54,7 @@ main {
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
+    cursor: pointer;
 
     /* identical to box height, or 173% */
 
@@ -71,8 +73,12 @@ main {
     margin-top: 1em;
     height: 50px;
     margin-left: 28em;
+    cursor: pointer;
 }
-
+.avatar:hover{
+    border: 2px solid #FF7E1B;
+    border-radius: 40px;
+}
 .cart-avatar-container>li {
 
     list-style: none;
@@ -84,6 +90,7 @@ main {
     height: 20px;
     background-size: cover;
     margin-top: 1em;
+    cursor: pointer;
 
 }
 
