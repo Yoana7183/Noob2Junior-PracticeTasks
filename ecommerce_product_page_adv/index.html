@@ -56,7 +56,14 @@
             <div class="img-container">
               <div class="main-product-img"></div>
             </div>
-            <div class="mini-images"></div>
+            <div class="mini-images">
+              <div class="container-gallery">
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1-thumbnail.jpg" alt="Imagen 1"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2-thumbnail.jpg" alt="Imagen 2"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3-thumbnail.jpg" alt="Imagen 3"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4-thumbnail.jpg" alt="Imagen 4"></div>
+              </div>
+            </div>
           </div>
           <div class="info-container">
             <div class="info-for-product">
@@ -79,7 +86,7 @@
 
                   <div class="counter">
                     <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                    <input type="text" value="1">
+                    <input type="text" value="0">
                     <span class="up" onClick='increaseCount(event, this)'>+</span>
                   </div>
 
@@ -114,7 +121,7 @@
     function decreaseCount(a, b) {
       var input = b.nextElementSibling;
       var value = parseInt(input.value, 10);
-      if (value > 1) {
+      if (value > 0) {
         value = isNaN(value) ? 0 : value;
         value--;
         input.value = value;
