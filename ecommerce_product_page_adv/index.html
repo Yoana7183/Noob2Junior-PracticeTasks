@@ -58,12 +58,28 @@
             </div>
             <div class="mini-images">
               <div class="container-gallery">
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1-thumbnail.jpg" alt="Imagen 1"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2-thumbnail.jpg" alt="Imagen 2"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3-thumbnail.jpg" alt="Imagen 3"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4-thumbnail.jpg" alt="Imagen 4"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1-thumbnail.jpg"
+                    alt="Imagen 1"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2-thumbnail.jpg"
+                    alt="Imagen 2"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3-thumbnail.jpg"
+                    alt="Imagen 3"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4-thumbnail.jpg"
+                    alt="Imagen 4"></div>
               </div>
             </div>
+            <!-- <div class="big-images-for-modal-view">
+              <div class="container-gallery-big-images">
+                <div class="gallery__item"><img class="gallery__image-for-modal" src="./images/image-product-1.jpg"
+                    alt="Imagen 1"></div>
+                <div class="gallery__item"><img class="gallery__image-for-modal" src="./images/image-product-2.jpg"
+                    alt="Imagen 2"></div>
+                <div class="gallery__item"><img class="gallery__image-for-modal" src="./images/image-product-3.jpg"
+                    alt="Imagen 3"></div>
+                <div class="gallery__item"><img class="gallery__image-for-modal" src="./images/image-product-4.jpg"
+                    alt="Imagen 4"></div>
+              </div>
+            </div> -->
           </div>
           <div class="info-container">
             <div class="info-for-product">
@@ -92,8 +108,9 @@
 
 
                 </div>
-                
-                <button class="add-to-cart"> <img src="./images/icon-cart.svg" alt="" srcset="" style="color: white;"> Add to cart</button>
+
+                <button class="add-to-cart"> <img src="./images/icon-cart.svg" alt="" srcset="" style="color: white;">
+                  Add to cart</button>
               </div>
             </div>
           </div>
@@ -127,6 +144,118 @@
         input.value = value;
       }
     }
+
+    const images = document.querySelectorAll('.gallery__image'), iconClose = document.getElementById('closeModal');
+    const modalImagesContainer = document.querySelectorAll('.gallery__image')
+
+    let contenedorModal
+    let additionalModalImg
+
+    let currentImage = 0
+
+    for (let i = 0; i < images.length; i++) {
+      images[i].addEventListener('click', () => {
+
+        printModal(images[i].src, images[i].alt)
+      })
+    }
+
+    const printModal = (source, alt) => {
+      contenedorModal = document.createElement('div');
+      contenedorModal.setAttribute('class', 'js-contenedor-modal');
+      contenedorModal.innerHTML = `
+					<a href='#' id='prev' class='arrow left'>Prev</a> 
+					<img src='${source}' alt='${alt}'style="width:30em;" class='modal__image' /> 
+					<div class="js-icono-cerrar" id="closeModal"> </div>
+					<a href='#' class='arrow right' id='next'>Next</a> 
+					`
+      document.body.appendChild(contenedorModal)
+      // my code: ----------------------------------------------------------------------------------------------
+      additionalModalImg = document.createElement('div');
+      additionalModalImg.setAttribute('class', 'js-additional-modal');
+      additionalModalImg.innerHTML = `
+      <div class ="another-pic"> 
+			<img src='${source}' alt='${alt}'style="width:5em;" class='modal__image' /> 
+         
+        
+      </div>
+				
+					`
+          contenedorModal.appendChild(additionalModalImg)
+
+
+      document.addEventListener('click', (e) => {
+        if (e.target === prev) {
+          if (currentImage <= 0) {
+
+            currentImage = images.length - 1;
+            contenedorModal.innerHTML = `
+					<a href='#' id='prev' class='arrow left'>Prev</a>
+					<img src='${images[currentImage].src}' alt='${alt}' class='modal__image' /> 
+					<div class="js-icono-cerrar" id="closeModal"></div>
+					<a href='#' class='arrow right' id='next'>Next</a> 
+					`
+
+          }
+          else {
+            currentImage--
+
+            contenedorModal.innerHTML = `
+					<a href='#' id='prev' class='arrow left'>Prev</a>
+					<img src='${images[currentImage].src}' alt='${alt}' class='modal__image' /> 
+					<div class="js-icono-cerrar" id="closeModal"></div>
+					<a href='#' class='arrow right' id='next'>Next</a>
+					`
+
+          }
+        }
+        else if (e.target === next) {
+          if (currentImage < images.length - 1) {
+            contenedorModal.innerHTML = `
+					<a href='#' id='prev' class='arrow left'>Prev</a>
+					<img src='${images[currentImage + 1].src}' alt='${alt}' class='modal__image' /> 
+					<div class="js-icono-cerrar" id="closeModal"></div>
+					<a href='#' class='arrow right' id='next'>Next</a> 
+					`
+            currentImage++
+            console.log(`Next: if ${currentImage}`)
+          }
+          else {
+            contenedorModal.innerHTML = `
+					<a href='#' id='prev' class='arrow left'>Prev</a> 
+					<img src='${images[0].src}' alt='${alt}' class='modal__image' /> 
+					<div class="js-icono-cerrar" id="closeModal"></div>
+					<a href='#' class='arrow right' id='next'>Next</a>
+					`
+            currentImage = 0
+          }
+        }
+      }
+
+      )
+    }
+
+
+    const removeModal = () => contenedorModal.remove()
+
+
+    document.addEventListener('click', (e) => {
+      if (e.target === closeModal) {
+        removeModal()
+      }
+      else {
+        if (e.target.className === 'js-contenedor-modal') {
+          removeModal()
+        }
+
+      }
+    })
+
+    document.addEventListener('keyup', (e) => {
+      if (e.key === 'Escape') {
+        removeModal()
+      }
+    })
   </script>
 </body>
 
