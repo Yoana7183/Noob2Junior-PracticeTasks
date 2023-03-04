@@ -58,13 +58,13 @@
             </div>
             <div class="mini-images">
               <div class="container-gallery">
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1-thumbnail.jpg"
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
                     alt="Imagen 1"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2-thumbnail.jpg"
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
                     alt="Imagen 2"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3-thumbnail.jpg"
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
                     alt="Imagen 3"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4-thumbnail.jpg"
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
                     alt="Imagen 4"></div>
               </div>
             </div>
@@ -165,7 +165,7 @@
       contenedorModal.setAttribute('class', 'js-contenedor-modal');
       contenedorModal.innerHTML = `
 					<a href='#' id='prev' class='arrow left'>Prev</a> 
-					<img src='${source}' alt='${alt}'style="width:30em;" class='modal__image' /> 
+					<img src='${source}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"> </div>
 					<a href='#' class='arrow right' id='next'>Next</a> 
 					`
@@ -174,11 +174,16 @@
       additionalModalImg = document.createElement('div');
       additionalModalImg.setAttribute('class', 'js-additional-modal');
       additionalModalImg.innerHTML = `
-      <div class ="another-pic"> 
-			<img src='${source}' alt='${alt}'style="width:5em;" class='modal__image' /> 
-         
-        
-      </div>
+      <div class="container-gallery-pic">
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
+                    alt="Imagen 1"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
+                    alt="Imagen 2"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
+                    alt="Imagen 3"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
+                    alt="Imagen 4"></div>
+              </div>
 				
 					`
           contenedorModal.appendChild(additionalModalImg)
@@ -195,7 +200,19 @@
 					<div class="js-icono-cerrar" id="closeModal"></div>
 					<a href='#' class='arrow right' id='next'>Next</a> 
 					`
-
+          additionalModalImg.innerHTML = `
+      <div class="container-gallery-pic">
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
+                    alt="Imagen 1"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
+                    alt="Imagen 2"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
+                    alt="Imagen 3"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
+                    alt="Imagen 4"></div>
+              </div>
+				
+					`
           }
           else {
             currentImage--
@@ -206,7 +223,19 @@
 					<div class="js-icono-cerrar" id="closeModal"></div>
 					<a href='#' class='arrow right' id='next'>Next</a>
 					`
-
+          additionalModalImg.innerHTML = `
+      <div class="container-gallery-pic">
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
+                    alt="Imagen 1"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
+                    alt="Imagen 2"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
+                    alt="Imagen 3"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
+                    alt="Imagen 4"></div>
+              </div>
+				
+					`
           }
         }
         else if (e.target === next) {
@@ -218,7 +247,19 @@
 					<a href='#' class='arrow right' id='next'>Next</a> 
 					`
             currentImage++
-            console.log(`Next: if ${currentImage}`)
+            additionalModalImg.innerHTML = `
+      <div class="container-gallery-pic">
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
+                    alt="Imagen 1"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
+                    alt="Imagen 2"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
+                    alt="Imagen 3"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
+                    alt="Imagen 4"></div>
+              </div>
+				
+					`
           }
           else {
             contenedorModal.innerHTML = `
@@ -228,6 +269,19 @@
 					<a href='#' class='arrow right' id='next'>Next</a>
 					`
             currentImage = 0
+            additionalModalImg.innerHTML = `
+      <div class="container-gallery-pic">
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
+                    alt="Imagen 1"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
+                    alt="Imagen 2"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
+                    alt="Imagen 3"></div>
+                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
+                    alt="Imagen 4"></div>
+              </div>
+				
+					`
           }
         }
       }

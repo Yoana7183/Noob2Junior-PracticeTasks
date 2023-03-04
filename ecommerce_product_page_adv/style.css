@@ -275,15 +275,18 @@ main {
 }
 
 /*-----------------------------------------------------------card-modal----------------------------------------------*/
-.js-additional-modal{
+.js-additional-modal {
     display: flex;
     width: 28em;
     margin-top: 20em;
+    justify-content: end;
 }
-.another-pic{
+
+.another-pic {
     display: flex;
-   
+
 }
+
 .mini-images {
     margin-left: 2.5em;
     margin-top: 2em;
@@ -295,11 +298,23 @@ main {
 
 }
 
-.gallery__item {
-    width: 300px;
-    height: 250px;
-    cursor: pointer;
+.container-gallery-pic {
+   display: flex;
 
+}
+
+.gallery__item {
+    width: 6.3em;
+    height: 6.3em;
+    cursor: pointer;
+    margin-right: 1em;
+
+}
+
+.modal__image {
+    width: 35em;
+    height: 35em;
+    border-radius: 15px;
 }
 
 .gallery__image {
@@ -344,6 +359,7 @@ main {
     height: 21px;
     padding: 30px 25px;
     cursor: pointer;
+    margin-right: 30em;
 }
 
 .js-icono-cerrar:after,
@@ -419,6 +435,7 @@ a.arrow:hover {
     /* background-image: url("./images/icon-next.svg");
     background-size: cover;
     background-repeat: no-repeat; */
+    margin-right: 27.2em;
 }
 
 .arrow.left {
@@ -432,6 +449,7 @@ a.arrow:hover {
     border: 2px solid white;
     border-radius: 200px;
     background-color: white;
+    margin-left: 27.2em;
 }
 
 @media (max-width: 850px) {
