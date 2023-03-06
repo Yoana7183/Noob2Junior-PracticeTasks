@@ -37,7 +37,7 @@ nav {
     width: 100%;
 }
 
-.menu {
+.nav-links {
     display: flex;
     flex-direction: row;
 
@@ -58,7 +58,7 @@ main {
 }
 
 
-.menu>li {
+.nav-links>li {
     list-style: none;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -74,7 +74,7 @@ main {
     color: #69707D;
 }
 
-.menu>li:hover {
+.nav-links>li:hover {
     box-sizing: border-box;
 
 
@@ -518,7 +518,11 @@ a.arrow:hover {
 
     nav>.nav-btn>label:hover,
     nav #nav-check:checked~.nav-btn>label {
-        background-color: transparent
+        background-color: white
+    }
+
+    #nav-check {
+        opacity: 0;
     }
 
     nav>.nav-btn>label>span {
@@ -533,7 +537,7 @@ a.arrow:hover {
         position: absolute;
         display: block;
         width: 100%;
-        background-color: transparent;
+        background-color: white;
         height: 0px;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
@@ -550,7 +554,7 @@ a.arrow:hover {
         overflow-y: auto;
     }
 
-    .menu {
+    .nav-links {
         display: none;
     }
 
