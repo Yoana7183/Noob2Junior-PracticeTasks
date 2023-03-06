@@ -500,7 +500,7 @@ a.arrow:hover {
     nav {
         width: 327px;
         border-bottom: 0px;
-        margin-left: 1em;
+
     }
 
     nav>.nav-btn {
@@ -525,6 +525,23 @@ a.arrow:hover {
         opacity: 0;
     }
 
+    .nav-links>li {
+        list-style: none;
+        padding: 0px;
+        padding-bottom: 10px;
+        font-weight: 700;
+        font-size: 15px;
+
+        cursor: pointer;
+        color: #0c0c0c;
+    }
+
+    .nav-links {
+        padding-left: 2em;
+        padding-top: 2em;
+    }
+
+
     nav>.nav-btn>label>span {
         display: block;
         width: 16px;
@@ -536,9 +553,9 @@ a.arrow:hover {
     nav>.nav-links {
         position: absolute;
         display: block;
-        width: 100%;
+        width: 80%;
         background-color: white;
-        height: 0px;
+        height: 50%;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
         top: 50px;
@@ -550,7 +567,7 @@ a.arrow:hover {
     }
 
     nav>#nav-check:checked~.nav-links {
-        height: calc(100vh - 50px);
+        height: 110%;
         overflow-y: auto;
     }
 
