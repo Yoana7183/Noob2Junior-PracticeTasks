@@ -5,6 +5,7 @@
 
 }
 
+
 .flex-page {
     display: flex;
     flex-direction: column;
@@ -459,11 +460,71 @@ a.arrow:hover {
     }
 }
 
+/*--------------------------------------------------------------DESKTOP----------------------------------------------------------*/
+@media only screen and (min-width: 911px) {
+    .nav>.nav-btn {
+        display: none;
+    }
+
+    .nav>#nav-check {
+        display: none;
+
+    }
+}
+
+/*--------------------------------------------------------------DESKTOP----------------------------------------------------------*/
 /*--------------------------------------------------------------MOBILE----------------------------------------------------------*/
 @media only screen and (min-width: 300px) and (max-width: 499px) {
     nav {
-        width: 375px;
-       
+        width: 360px;
+        border-bottom: 0px;
+    }
+
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: transparent
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
     }
 
     .menu {
@@ -478,6 +539,22 @@ a.arrow:hover {
         margin-left: 1em;
     }
 
+    .logo {
+        margin-top: 1em;
+    }
+
+    .cart {
+        width: 21.82px;
+        height: 20px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .avatar {
+        width: 24px;
+        height: 24px;
+    }
+
     main {
         flex-direction: column;
         margin-left: 1.2em;
@@ -489,15 +566,20 @@ a.arrow:hover {
     }
 
     .main-product-img {
-        width: 375px;
+        width: 385px;
         height: 300px;
         margin-left: -2em;
+        border-radius: 0px;
 
     }
 
     .mini-images {
         visibility: hidden;
         margin-top: -10em;
+    }
+
+    .product-images {
+        padding-top: 0px;
     }
 
     .company-logo {
@@ -538,7 +620,8 @@ a.arrow:hover {
         width: 327px;
         height: 56px;
     }
-    .add-to-cart{
+
+    .add-to-cart {
         width: 327px;
         height: 56px;
         margin-bottom: 4em;
