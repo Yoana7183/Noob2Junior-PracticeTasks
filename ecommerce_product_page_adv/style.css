@@ -17,6 +17,15 @@ section {
 
 }
 
+nav>.nav-btn {
+    display: none;
+}
+
+.nav>#nav-check {
+    display: none;
+
+}
+
 nav {
     display: flex;
     border-bottom: 1px solid;
@@ -462,11 +471,11 @@ a.arrow:hover {
 
 /*--------------------------------------------------------------DESKTOP----------------------------------------------------------*/
 @media only screen and (min-width: 911px) {
-    .nav>.nav-btn {
+    nav>.nav-btn {
         display: none;
     }
 
-    .nav>#nav-check {
+    nav>#nav-check {
         display: none;
 
     }
@@ -480,11 +489,10 @@ a.arrow:hover {
         border-bottom: 0px;
     }
 
-    .nav>.nav-btn {
+    nav>.nav-btn {
         display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 0px;
+        margin-top: 1em;
+        margin-right: 1em;
     }
 
     .nav>.nav-btn>label {
@@ -494,19 +502,20 @@ a.arrow:hover {
         padding: 13px;
     }
 
-    .nav>.nav-btn>label:hover,
-    .nav #nav-check:checked~.nav-btn>label {
+    nav>.nav-btn>label:hover,
+    nav #nav-check:checked~.nav-btn>label {
         background-color: transparent
     }
 
-    .nav>.nav-btn>label>span {
+    nav>.nav-btn>label>span {
         display: block;
         width: 25px;
-        height: 10px;
-        border-top: 2px solid #eee;
+        height: 5px;
+        border-top: 4px solid #070707;
+        cursor: pointer;
     }
 
-    .nav>.nav-links {
+    nav>.nav-links {
         position: absolute;
         display: block;
         width: 100%;
@@ -518,11 +527,11 @@ a.arrow:hover {
         left: 0px;
     }
 
-    .nav>#nav-check:not(:checked)~.nav-links {
+    nav>#nav-check:not(:checked)~.nav-links {
         height: 0px;
     }
 
-    .nav>#nav-check:checked~.nav-links {
+    nav>#nav-check:checked~.nav-links {
         height: calc(100vh - 50px);
         overflow-y: auto;
     }
