@@ -34,98 +34,100 @@
 
 <body>
   <div class="center-page-flex">
-    <div class="flex-page"></div>
-    <section>
-      <nav>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <div class="logo"></div>
-        <div class="menu">
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
-        </div>
-        <div class="cart-avatar-container">
-          <div class="cart"> </div>
-          <div class="avatar"> </div>
-        </div>
-      </nav>
+    <div class="flex-page">
       <section>
-        <main>
-          <div class="product-images">
-            <div class="img-container">
-              <div class="main-product-img"></div>
-            </div>
-            <div class="mini-images">
-              <div class="container-gallery">
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
-                    alt="Imagen 1"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
-                    alt="Imagen 2"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
-                    alt="Imagen 3"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
-                    alt="Imagen 4"></div>
-              </div>
-            </div>
-            <!-- <div class="big-images-for-modal-view">
-              <div class="container-gallery-big-images">
-                <div class="gallery__item"><img class="gallery__image-for-modal" src="./images/image-product-1.jpg"
-                    alt="Imagen 1"></div>
-                <div class="gallery__item"><img class="gallery__image-for-modal" src="./images/image-product-2.jpg"
-                    alt="Imagen 2"></div>
-                <div class="gallery__item"><img class="gallery__image-for-modal" src="./images/image-product-3.jpg"
-                    alt="Imagen 3"></div>
-                <div class="gallery__item"><img class="gallery__image-for-modal" src="./images/image-product-4.jpg"
-                    alt="Imagen 4"></div>
-              </div>
-            </div> -->
+        <nav>
+          <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
           </div>
-          <div class="info-container">
-            <div class="info-for-product">
-              <div class="company-logo">Sneaker Company</div>
-              <div class="product-name">Fall Limited Edition Sneakers</div>
-              <div class="product-description">These low-profile sneakers are your perfect casual wear companion.
-                Featuring
-                a
-                durable rubber outer sole, they will withstand everything the weather can offer.</div>
-              <div class="price">
-                <div class="actual-price"> $125.00
-                  <div class="percent-of-discount"> 50%</div>
+          <div class="logo"></div>
+          <div class="menu">
+
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+
+          </div>
+          <div class="cart-avatar-container">
+            <div class="cart"> </div>
+            <div class="avatar"> </div>
+          </div>
+        </nav>
+        <section>
+          <main>
+            <div class="product-images">
+              <div class="img-container">
+                <div class="main-product-img">
+                  <div class="prev-next-mobile">
+
+                    <div class="prev">
+                      <div><img src="./images/icon-previous.svg" alt=""></div>
+                    </div>
+                    <div class="next">
+                      <div><img src="./images/icon-next.svg" alt=""></div>
+                    </div>
+
+                  </div>
                 </div>
-
-                <div class="price-before-discount"> $250.00</div>
+                <div class="mini-images">
+                  <div class="container-gallery">
+                    <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
+                        alt="Imagen 1"></div>
+                    <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
+                        alt="Imagen 2"></div>
+                    <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
+                        alt="Imagen 3"></div>
+                    <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
+                        alt="Imagen 4"></div>
+                  </div>
+                </div>
               </div>
-              <div class="quantity">
-                <div class="add-remove-quantity">
 
-
-                  <div class="counter">
-                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
-                    <input type="text" value="0">
-                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+            </div>
+            <div class="info-container">
+              <div class="info-for-product">
+                <div class="company-logo">Sneaker Company</div>
+                <div class="product-name">Fall Limited Edition Sneakers</div>
+                <div class="product-description">These low-profile sneakers are your perfect casual wear companion.
+                  Featuring
+                  a
+                  durable rubber outer sole, they will withstand everything the weather can offer.</div>
+                <div class="price">
+                  <div class="actual-price"> $125.00
+                    <div class="percent-of-discount"> 50%</div>
                   </div>
 
-
+                  <div class="price-before-discount"> $250.00</div>
                 </div>
+                <div class="quantity">
+                  <div class="add-remove-quantity">
 
-                <button class="add-to-cart"> <img src="./images/icon-cart.svg" alt="" srcset="" style="color: white;">
-                  Add to cart</button>
+
+                    <div class="counter">
+                      <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                      <input type="text" value="0">
+                      <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+
+
+                  </div>
+
+                  <button class="add-to-cart"> <img src="./images/icon-cart.svg" alt="" srcset="" style="color: white;">
+                    Add to cart</button>
+                </div>
               </div>
             </div>
-          </div>
 
-        </main>
+          </main>
+        </section>
       </section>
-    </section>
-
+    </div>
   </div>
   </div>
 
