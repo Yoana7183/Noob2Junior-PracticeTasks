@@ -154,6 +154,9 @@
       }
     }
 
+
+
+
     const images = document.querySelectorAll('.gallery__image'), iconClose = document.getElementById('closeModal');
     const modalImagesContainer = document.querySelectorAll('.gallery__image')
 
@@ -167,6 +170,11 @@
 
         printModal(images[i].src, images[i].alt)
       })
+    }
+    console.log(images);
+    const showNext = (current,next) => {
+      
+
     }
 
     const printModal = (source, alt) => {
