@@ -29,45 +29,6 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-
-    .dropbtn:hover,
-    .dropbtn:focus {
-      background-color: #2980B9;
-    }
-
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #FFFFFF;
-      width: 360px;
-      top: 50px;
-      left: -125px;
-      overflow: auto;
-
-      box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
-      border-radius: 10px;
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown a:hover {
-      background-color: #ddd;
-    }
-
-    .show {
-      display: block;
-    }
   </style>
 </head>
 
@@ -99,21 +60,21 @@
             <div class="dropdown">
               <button onclick="myFunction()" class="cart"></button>
               <div id="myDropdown" class="dropdown-content">
-                <div class="cart-title"> Cart</div>
+                <div class="cart-title">
+                  <div class="title">Cart</div>
+                </div>
                 <div class="cart-container">
                   <div class="purchase-info">
-                    <div class="purchase-img"></div>
-                    <div class="purchase-info"></div>
+                    <div class="container-info">
+                      <div class="purchase-img"></div>
+                      <div class="purchase-info">Fall Limited Edition Sneakers</div>
+                    </div>
                     <div class="purchase-prices">
-                      <div class="price">$125.00
-                        <div class="multiplication"> x
-                          <div class="quantity"> 3
-                            <div class="price-to-pay">$375.00
-                              <div class="trash"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      <div class="price"> $125.00  </div>
+                      <div class="multiplication">  x  </div>
+                      <div class="quantity">  3  </div>
+                      <div class="price-to-pay"> $375.00  </div>
+                      <div class="trash"></div>
                     </div>
                     <button class="checkout">Checkout</button>
                   </div>
