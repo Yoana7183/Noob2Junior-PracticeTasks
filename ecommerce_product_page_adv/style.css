@@ -626,6 +626,9 @@ a.arrow:hover {
         border-bottom: 0px;
 
     }
+    .center-page-flex{
+        height: 740px;
+    }
 
     .flex-page {
         padding-left: calc(50% - 182px);
@@ -686,7 +689,7 @@ a.arrow:hover {
     nav>.nav-links {
         position: absolute;
         display: block;
-        width: 80%;
+        width: 70%;
         background-color: white;
         height: 50%;
         transition: all 0.3s ease-in;
@@ -712,7 +715,7 @@ a.arrow:hover {
 
         display: flex;
         width: 360px;
-        padding-top: 9em;
+        padding-top: 8em;
 
 
     }
@@ -827,6 +830,7 @@ a.arrow:hover {
         height: 100px;
         font-size: 15px;
         line-height: 25px;
+        margin-bottom: 1em;
     }
 
     .price {
