@@ -36,7 +36,24 @@ nav {
     ;
     width: 100%;
 }
-
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+ /*-------------------------------------------------------------------------dropdown-cart-----------------------------------------------*/
+.cart-title{
+    height: 67px;
+    width: 360px;
+    border-bottom: 1px solid #E4E9F2;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+/*-------------------------------------------------------------------------dropdown-cart--END---------------------------------------------*/
 .nav-links {
     display: flex;
     flex-direction: row;
@@ -301,7 +318,7 @@ main {
 }
 
 .mini-images {
-    margin-left: 2.5em;
+   
     margin-top: 2em;
 }
 

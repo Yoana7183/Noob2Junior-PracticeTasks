@@ -29,6 +29,45 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    .dropbtn:hover,
+    .dropbtn:focus {
+      background-color: #2980B9;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #FFFFFF;
+      width: 360px;
+      top: 50px;
+      left: -125px;
+      overflow: auto;
+
+      box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+      border-radius: 10px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
   </style>
 </head>
 
@@ -57,7 +96,31 @@
 
           </div>
           <div class="cart-avatar-container">
-            <div class="cart"> </div>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="cart"></button>
+              <div id="myDropdown" class="dropdown-content">
+                <div class="cart-title"> Cart</div>
+                <div class="cart-container">
+                  <div class="purchase-info">
+                    <div class="purchase-img"></div>
+                    <div class="purchase-info"></div>
+                    <div class="purchase-prices">
+                      <div class="price">$125.00
+                        <div class="multiplication"> x
+                          <div class="quantity"> 3
+                            <div class="price-to-pay">$375.00
+                              <div class="trash"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="checkout">Checkout</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
             <div class="avatar"> </div>
           </div>
         </nav>
@@ -78,6 +141,7 @@
                   </div>
                 </div>
                 <div class="mini-images">
+
                   <div class="container-gallery">
                     <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
                         alt="Imagen 1"></div>
@@ -138,6 +202,25 @@
     Coded by <a href="#">Nakova Yoana</a>.
   </div> -->
   <script>
+
+
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.cart')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
     function increaseCount(a, b) {
       var input = b.previousElementSibling;
       var value = parseInt(input.value, 10);
@@ -185,7 +268,8 @@
 					<a href='#' id='prev' class='arrow left'>Prev</a> 
 					<img src='${source}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"> </div>
-					<a href='#' class='arrow right' id='next'>Next</a> 
+					<a href='#' class='arrow right' id='next'>Next</a>  
+          ${contenedorModal}
 					`
       document.body.appendChild(contenedorModal)
       // my code: ----------------------------------------------------------------------------------------------
