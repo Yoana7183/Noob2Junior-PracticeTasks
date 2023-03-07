@@ -226,6 +226,8 @@ main {
     background-size: cover;
     margin-top: 1em;
     cursor: pointer;
+    background-color: white;
+    border: 0px;
 
 }
 
@@ -407,7 +409,7 @@ main {
 .js-additional-modal {
     display: flex;
     width: 28em;
-    margin-top: 20em;
+
     justify-content: end;
 }
 
@@ -441,8 +443,8 @@ main {
 }
 
 .modal__image {
-    width: 35em;
-    height: 35em;
+    width: 550px;
+    height: 550px;
     border-radius: 15px;
 }
 
@@ -462,12 +464,15 @@ main {
     border-radius: 20px;
 }
 
+.modal-container {}
+
 .js-contenedor-modal {
     position: fixed;
     display: block;
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -523,14 +528,17 @@ main {
 #prev,
 #next {
     position: absolute;
+
 }
 
 #prev {
     left: 20px;
+    margin-top: -10em;
 }
 
 #next {
     right: 20px;
+    margin-top: -10em;
 }
 
 #prev,

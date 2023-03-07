@@ -37,7 +37,7 @@
     <div class="flex-page">
       <section>
         <nav>
-          <input type="checkbox" id="nav-check">
+          <input type="checkbox" id="nav-check" onclick="validate()">
           <div class="nav-btn">
 
             <label for="nav-check">
@@ -70,10 +70,10 @@
                       <div class="purchase-info">Fall Limited Edition Sneakers</div>
                     </div>
                     <div class="purchase-prices">
-                      <div class="price"> $125.00  </div>
-                      <div class="multiplication">  x  </div>
-                      <div class="quantity">  3  </div>
-                      <div class="price-to-pay"> $375.00  </div>
+                      <div class="price"> $125.00 </div>
+                      <div class="multiplication"> x </div>
+                      <div class="quantity"> 3 </div>
+                      <div class="price-to-pay"> $375.00 </div>
                       <div class="trash"></div>
                     </div>
                     <button class="checkout">Checkout</button>
@@ -163,7 +163,15 @@
     Coded by <a href="#">Nakova Yoana</a>.
   </div> -->
   <script>
+    function validate() {
+      if (document.getElementById('nav-check').checked) {
+        var img = document.querySelector('.header_container').style.background = 'red'
 
+      } else {
+        var img = document.querySelector('.header_container').style.background = 'none'
+
+      }
+    }
 
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
@@ -225,12 +233,15 @@
     const printModal = (source, alt) => {
       contenedorModal = document.createElement('div');
       contenedorModal.setAttribute('class', 'js-contenedor-modal');
-      contenedorModal.innerHTML = `
+      contenedorModal.innerHTML =
+        `
 					<a href='#' id='prev' class='arrow left'>Prev</a> 
 					<img src='${source}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"> </div>
 					<a href='#' class='arrow right' id='next'>Next</a>  
-          ${contenedorModal}
+          
+       
+          
 					`
       document.body.appendChild(contenedorModal)
       // my code: ----------------------------------------------------------------------------------------------
@@ -262,20 +273,10 @@
 					<img src='${images[currentImage].src}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"></div>
 					<a href='#' class='arrow right' id='next'>Next</a> 
+       
+          
 					`
-            additionalModalImg.innerHTML = `
-      <div class="container-gallery-pic">
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
-                    alt="Imagen 1"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
-                    alt="Imagen 2"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
-                    alt="Imagen 3"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
-                    alt="Imagen 4"></div>
-              </div>
-				
-					`
+
           }
           else {
             currentImage--
@@ -285,20 +286,10 @@
 					<img src='${images[currentImage].src}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"></div>
 					<a href='#' class='arrow right' id='next'>Next</a>
+      
+         
 					`
-            additionalModalImg.innerHTML = `
-      <div class="container-gallery-pic">
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
-                    alt="Imagen 1"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
-                    alt="Imagen 2"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
-                    alt="Imagen 3"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
-                    alt="Imagen 4"></div>
-              </div>
-				
-					`
+
           }
         }
         else if (e.target === next) {
@@ -308,21 +299,11 @@
 					<img src='${images[currentImage + 1].src}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"></div>
 					<a href='#' class='arrow right' id='next'>Next</a> 
+         
+          
 					`
             currentImage++
-            additionalModalImg.innerHTML = `
-      <div class="container-gallery-pic">
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
-                    alt="Imagen 1"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
-                    alt="Imagen 2"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
-                    alt="Imagen 3"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
-                    alt="Imagen 4"></div>
-              </div>
-				
-					`
+
           }
           else {
             contenedorModal.innerHTML = `
@@ -330,21 +311,12 @@
 					<img src='${images[0].src}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"></div>
 					<a href='#' class='arrow right' id='next'>Next</a>
+         
+          
+         
 					`
             currentImage = 0
-            additionalModalImg.innerHTML = `
-      <div class="container-gallery-pic">
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-1.jpg"
-                    alt="Imagen 1"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-2.jpg"
-                    alt="Imagen 2"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-3.jpg"
-                    alt="Imagen 3"></div>
-                <div class="gallery__item"><img class="gallery__image" src="./images/image-product-4.jpg"
-                    alt="Imagen 4"></div>
-              </div>
-				
-					`
+
           }
         }
       }
