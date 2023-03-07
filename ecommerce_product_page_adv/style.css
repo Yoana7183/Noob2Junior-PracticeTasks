@@ -99,7 +99,7 @@ nav {
     position: absolute;
     background-color: #FFFFFF;
     width: 360px;
-    top: 50px;
+    top: 60px;
     left: -125px;
     overflow: auto;
 
@@ -619,6 +619,15 @@ a.arrow:hover {
 
     }
 
+    .flex-page {
+        padding-left: calc(50% - 182px);
+    }
+
+    .dropdown-content {
+        top: 70px;
+        left: calc(100% - 286.9px);
+    }
+
     nav>.nav-btn {
         display: inline-block;
         margin-top: 1em;
@@ -831,6 +840,7 @@ a.arrow:hover {
     }
 
     .add-to-cart {
+        margin-top: 1em;
         width: 327px;
         height: 56px;
         margin-bottom: 4em;
