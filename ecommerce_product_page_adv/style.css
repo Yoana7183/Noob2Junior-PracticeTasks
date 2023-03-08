@@ -534,17 +534,35 @@ main {
 #prev {
     left: 20px;
     margin-top: -10em;
-}
+ 
 
+
+
+}
+.img-prev{
+    background-image: url('./images/icon-previous.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2em;
+    height: 2em;
+   
+}
 #next {
     right: 20px;
     margin-top: -10em;
-}
 
-#prev,
-#next {
-    text-indent: -666em;
 }
+.img-next{
+    background-image: url('./images/icon-next.svg');
+    background-repeat: no-repeat;
+    background-size: 2em;
+    padding-right: 2px;
+    width: 2em;
+}
+/* #prev,
+/* #next {
+    text-indent: -666em;
+} */ */
 
 a.arrow {
     border: solid #999;
@@ -557,11 +575,11 @@ a.arrow:hover {
     border-color: #fff;
 }
 
-.arrow.right {
+/* .arrow.right {
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
 
-}
+} */
 
 .arrow.right {
     width: 2em;
@@ -569,16 +587,14 @@ a.arrow:hover {
     border: 2px solid white;
     border-radius: 200px;
     background-color: white;
-    /* background-image: url("./images/icon-next.svg");
-    background-size: cover;
-    background-repeat: no-repeat; */
+
     margin-right: 27.2em;
 }
 
-.arrow.left {
+/* .arrow.left {
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
-}
+} */
 
 .arrow.left {
     width: 2em;
@@ -586,6 +602,7 @@ a.arrow:hover {
     border: 2px solid white;
     border-radius: 200px;
     background-color: white;
+
     margin-left: 27.2em;
 }
 
@@ -626,7 +643,8 @@ a.arrow:hover {
         border-bottom: 0px;
 
     }
-    .center-page-flex{
+
+    .center-page-flex {
         height: 740px;
     }
 
