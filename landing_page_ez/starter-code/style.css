@@ -228,7 +228,7 @@ footer {
 }
 
 /*-------------------------------------------------------------DESKTOP---------------------------------------------------------*/
-@media only screen and (min-width: 911px) and (max-width: 1440px) {
+@media only screen and (min-width: 992px) and (max-width: 2000px) {
     .main {
         background-image: url("./assets/bg-main-desktop.png");
         background-repeat: no-repeat;
@@ -239,7 +239,7 @@ footer {
 
 /*-------------------------------------------------------------DESKTOP - END---------------------------------------------------------*/
 /*-------------------------------------------------------------TABLET---------------------------------------------------------*/
-@media only screen and (min-width: 600px) and (max-width: 910px) {
+@media only screen and (min-width: 600px) and (max-width: 990px) {
     .main {
         background-image: url("./assets/bg-main-tablet.png");
         background-repeat: no-repeat;
@@ -425,6 +425,7 @@ footer {
     .ios-btn {
         width: 296px;
         height: 61px;
+        margin-left: 2em;
 
 
     }
@@ -436,6 +437,7 @@ footer {
     .android-btn {
         width: 296px;
         height: 61px;
+        margin-left: 2em;
     }
 
     .android-btn:hover {

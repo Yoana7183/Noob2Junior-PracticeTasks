@@ -244,7 +244,7 @@ input {
 }
 
 /*--------------------------------------------DESKTOP------------------------------------------------*/
-@media only screen and (min-width: 911px) and (max-width: 2000px) {
+@media only screen and (min-width:1001px) and (max-width: 2000px) {
 
     .container {
 
@@ -364,7 +364,7 @@ input {
 }
 
 /*--------------------------------------------TABLET------------------------------------------------*/
-@media only screen and (min-width: 601px) and (max-width: 910px) {
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
     .container {
         padding: 1rem 1rem 1rem 1rem;
     }
