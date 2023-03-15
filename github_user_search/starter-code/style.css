@@ -37,7 +37,7 @@ body {
 .main-grid {
     background-color: var(--color-bg);
     color: var(--color-fg);
-    padding: 1em;
+    padding: 3em 3em 3em 2em;
     border-radius: 15px;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
     border: 0px;
@@ -102,7 +102,7 @@ body {
     border-radius: 15px;
     border: 0px;
     background-color: var(--color-bg);
-
+    
     font-size: 2rem;
 
 }
@@ -171,10 +171,28 @@ input[name="search-input"] {
 
 
 .avatar-and-description {
-    display: flex;
-    margin: 2rem;
-    flex-flow: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 670px;
+}
+
+#profile-info {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  
+}
+
+.bio {
+    grid-column: 1/4;
+    padding-left: 13em;
+   margin-bottom: 2em;
+}
+
+.avatar {
+    grid-column: 1/2;
+    margin-left: 2em;
 }
 
 .time-stamp-info {
@@ -193,7 +211,7 @@ input[name="search-input"] {
     text-align: center;
     padding-top: 2rem;
     border-radius: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 2em;
 }
 
 li {
@@ -219,6 +237,10 @@ li {
 
 #mode {
     opacity: 0;
+}
+
+.not-available {
+    color: #747070;
 }
 
 /*-------------------------------------------------------------DESKTOP---------------------------------------------------------*/
@@ -305,6 +327,10 @@ li {
         height: 600px;
     }
 
+    .main-grid {
+        height: 450px;
+    }
+
     .avatar>img {
         width: 8em;
         height: 8em;
@@ -361,7 +387,7 @@ li {
 
     .time-stamp-info {
         margin-left: 12em;
-        margin-top: -6em;
+        margin-top: -8em;
 
     }
 
@@ -370,8 +396,9 @@ li {
     }
 
     .bio {
-        margin-top: 5em;
-        margin-left: -5rem;
+        margin-top: 7em;
+        margin-left: -7.5rem;
+        margin-bottom: 1em;
     }
 
     .profile-details {
@@ -392,6 +419,10 @@ li {
         margin-left: 1em;
         width: 327px;
         grid-template-columns: auto
+    }
+
+    .footer-grid>div {
+        padding: 6px;
     }
 }
 
