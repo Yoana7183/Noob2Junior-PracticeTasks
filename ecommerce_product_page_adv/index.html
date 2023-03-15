@@ -37,7 +37,7 @@
     <div class="flex-page">
       <section>
         <nav>
-          <input type="checkbox" id="nav-check" onclick="validate()">
+          <input type="checkbox" id="nav-check">
           <div class="nav-btn">
 
             <label for="nav-check">
@@ -58,7 +58,7 @@
           </div>
           <div class="cart-avatar-container">
             <div class="dropdown">
-              <button onclick="myFunction()" class="cart"></button>
+              <button onclick="toggleCart()" class="cart"></button>
               <div id="myDropdown" class="dropdown-content">
                 <div class="cart-title">
                   <div class="title">Cart</div>
@@ -163,17 +163,8 @@
     Coded by <a href="#">Nakova Yoana</a>.
   </div> -->
   <script>
-    function validate() {
-      if (document.getElementById('nav-check').checked) {
-        var img = document.querySelector('.header_container').style.background = 'red'
 
-      } else {
-        var img = document.querySelector('.header_container').style.background = 'none'
-
-      }
-    }
-
-    function myFunction() {
+    function toggleCart() {
       document.getElementById("myDropdown").classList.toggle("show");
     }
 
@@ -269,10 +260,10 @@
 
             currentImage = images.length - 1;
             contenedorModal.innerHTML = `
-					<a href='#' id='prev' class='arrow left'>Prev</a>
+            <a href='#' id='prev' class='arrow left'> <div class='img-prev'> </div>  </a> 
 					<img src='${images[currentImage].src}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"></div>
-					<a href='#' class='arrow right' id='next'>Next</a> 
+          <a href='#' class='arrow right' id='next'><div class='img-next'> </div> </a>  
        
           
 					`
@@ -282,10 +273,10 @@
             currentImage--
 
             contenedorModal.innerHTML = `
-					<a href='#' id='prev' class='arrow left'>Prev</a>
+            <a href='#' id='prev' class='arrow left'> <div class='img-prev'> </div>  </a> 
 					<img src='${images[currentImage].src}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"></div>
-					<a href='#' class='arrow right' id='next'>Next</a>
+          <a href='#' class='arrow right' id='next'><div class='img-next'> </div> </a>  
       
          
 					`
@@ -295,10 +286,10 @@
         else if (e.target === next) {
           if (currentImage < images.length - 1) {
             contenedorModal.innerHTML = `
-					<a href='#' id='prev' class='arrow left'>Prev</a>
+            <a href='#' id='prev' class='arrow left'> <div class='img-prev'> </div>  </a> 
 					<img src='${images[currentImage + 1].src}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"></div>
-					<a href='#' class='arrow right' id='next'>Next</a> 
+          <a href='#' class='arrow right' id='next'><div class='img-next'> </div> </a>   
          
           
 					`
@@ -307,10 +298,10 @@
           }
           else {
             contenedorModal.innerHTML = `
-					<a href='#' id='prev' class='arrow left'>Prev</a> 
+            <a href='#' id='prev' class='arrow left'> <div class='img-prev'> </div>  </a> 
 					<img src='${images[0].src}' alt='${alt}' class='modal__image' /> 
 					<div class="js-icono-cerrar" id="closeModal"></div>
-					<a href='#' class='arrow right' id='next'>Next</a>
+          <a href='#' class='arrow right' id='next'><div class='img-next'> </div> </a>  
          
           
          

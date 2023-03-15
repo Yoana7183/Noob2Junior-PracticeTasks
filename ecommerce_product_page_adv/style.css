@@ -416,6 +416,7 @@ main {
 .another-pic {
     display: flex;
 
+
 }
 
 .mini-images {
@@ -488,7 +489,8 @@ main {
 .js-icono-cerrar {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -50px;
+
     width: 21px;
     height: 21px;
     padding: 30px 25px;
@@ -534,36 +536,49 @@ main {
 #prev {
     left: 20px;
     margin-top: -10em;
- 
+
 
 
 
 }
-.img-prev{
+
+.img-prev {
     background-image: url('./images/icon-previous.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1em;
     width: 2em;
     height: 2em;
-   
+    margin-left: 5px;
+    margin-top: 4px;
+
 }
+
 #next {
-    right: 20px;
+    margin-top: -10em;
+    margin-left: 35em;
+    background-color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 100px;
     margin-top: -10em;
 
 }
-.img-next{
+
+.img-next {
     background-image: url('./images/icon-next.svg');
     background-repeat: no-repeat;
-    background-size: 2em;
+    background-size: 1em;
     padding-right: 2px;
-    width: 2em;
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    margin-left: 10px;
+    margin-top: 5px;
 }
-/* #prev,
-/* #next {
-    text-indent: -666em;
-} */ */
 
+/* #prev, #next {
+    text-indent: -666em;
+}  */
 a.arrow {
     border: solid #999;
     border-width: 0 1px 1px 1px;
@@ -580,8 +595,7 @@ a.arrow:hover {
     -webkit-transform: rotate(-90deg);
 
 } */
-
-.arrow.right {
+*/ .arrow.right {
     width: 2em;
     height: 2em;
     border: 2px solid white;
@@ -769,7 +783,7 @@ a.arrow:hover {
         background-color: white;
         background-size: cover;
         background-repeat: no-repeat;
-        margin-left: 14em;
+        margin-left: 13em;
     }
 
 
