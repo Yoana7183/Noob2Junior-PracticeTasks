@@ -347,6 +347,27 @@ li {
         font-size: 10px;
         height: 600px;
     }
+    .avatar-and-description {
+
+        grid-template-columns: 100px 150px;
+        grid-template-rows: auto auto;
+
+    }
+
+    .bio {
+        margin-left: 0em;
+        padding: 0px;
+        width: 260px;
+        padding-left: 2px;
+
+    }
+
+    .time-stamp-info {
+        margin-top: -2em;
+        grid-column: 1/3;
+        margin-left: 13.9em;
+        margin-bottom: 2em;
+    }
 
     .main-grid {
         height: 450px;
@@ -406,21 +427,13 @@ li {
 
     }
 
-    .time-stamp-info {
-        margin-left: 12em;
-        margin-top: -8em;
 
-    }
 
     #profile-info {
         /* margin-top: 1em; */
     }
 
-    .bio {
-        margin-top: 7em;
-        margin-left: -7.5rem;
-        margin-bottom: 1em;
-    }
+
 
     .profile-details {
         font-size: 1.3em;
