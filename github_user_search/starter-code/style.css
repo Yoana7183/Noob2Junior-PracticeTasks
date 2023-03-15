@@ -102,7 +102,7 @@ body {
     border-radius: 15px;
     border: 0px;
     background-color: var(--color-bg);
-    
+
     font-size: 2rem;
 
 }
@@ -181,13 +181,13 @@ input[name="search-input"] {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
-  
+
 }
 
 .bio {
     grid-column: 1/4;
     padding-left: 13em;
-   margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 .avatar {
@@ -290,6 +290,27 @@ li {
 
     body {
         height: 600;
+    }
+
+    .avatar-and-description {
+
+        grid-template-columns: 150px 300px;
+        grid-template-rows: auto auto;
+
+    }
+
+    .bio {
+        margin-left: 1em;
+        padding: 0px;
+        width: 470px;
+
+    }
+
+    .time-stamp-info {
+        margin-top: -2em;
+        grid-column: 1/3;
+        margin-left: 12.5em;
+        margin-bottom: 2em;
     }
 
     .git-hub-container {
