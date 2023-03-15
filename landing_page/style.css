@@ -79,11 +79,12 @@ nav {
 
 .sectionText>h1 {
   font-weight: 300;
+  color: #000000;
 }
 
 .sectionText {
   font-weight: 300;
-  color: #4e4d4d;
+  color: #424040;
 }
 
 .our-creations {
@@ -290,7 +291,7 @@ nav {
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
-    color: #000000;
+
     mix-blend-mode: normal;
     padding: 5em;
 
@@ -491,7 +492,7 @@ nav {
     width: 100%;
     background-color: black;
     height: 0px;
-    transition: all 0.3s ease-in;
+    transition: all 0.1s cubic-bezier(.77, 0, .18, 1);
     overflow-y: hidden;
     /* top: 0px; */
     left: 0px;
@@ -572,13 +573,15 @@ nav {
   .home-picture {
 
     background-image: url("./images/mobile/image-interactive.jpg");
-    height: 25rem;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 25em;
+    
     margin-bottom: 1rem;
     position: relative;
-    margin-top: 2rem;
 
+    
+    margin-top: 2rem;
+    margin-left: 0.4em;
   }
 
 
@@ -743,8 +746,10 @@ nav {
     max-width: 960px;
     margin: auto;
     font-family: Josefin Sans;
-    justify-content: center;
+
     text-align: center;
+    margin-left: calc(50% - 205px);
+    margin-right:calc(50% - 200px);
   }
 
   #container-under-picture {
@@ -831,7 +836,7 @@ nav {
     width: 100%;
     background-color: transparent;
     height: 0px;
-    transition: all 0.3s ease-in;
+    transition: all 0.1s cubic-bezier(.77, 0, .18, 1);
     overflow-y: hidden;
     top: 50px;
     left: 0px;
